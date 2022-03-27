@@ -1,0 +1,57 @@
+import React from 'react'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
+
+import { Node } from '../pages/index'
+
+interface Props {
+  node: Node
+}
+
+const PostCard = ({ node: { node: {frontmatter, parent} }}: Props) => {
+  const { title, date, images} = frontmatter;
+  const {image: { publicURL }, caption} = images[0];
+  return (
+    <Wrapper>
+      <Link to={`/${parent.relativeDirectory}`}>
+        <Image src={publicURL} alt={caption} />
+        <Content>
+          <Title>{title}</Title>
+          <Date>{date}</Date>
+      </Content>
+      </Link>
+    </Wrapper>
+  )
+}
+
+const Wrapper = styled.div`
+  position: relative;
+  --border-radius: 4px;
+`
+
+const Content = styled.div`
+  position: absolute;
+  bottom: 0;
+  background-color: hsla(40deg 12% 95% / .5);
+  width: 100%;
+  padding: 4px 8px;
+  border-radius: var(--border-radius);
+`
+
+const Title = styled.h3`
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-bold);
+`
+
+const Date = styled.p`
+  font-weight: var(--font-weight-medium);
+`
+
+const Image = styled.img`
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--border-radius);
+`
+export default PostCard;

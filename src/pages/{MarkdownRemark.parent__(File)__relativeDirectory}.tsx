@@ -2,6 +2,8 @@ import React from 'react'
 import {graphql} from 'gatsby'
 import styled from 'styled-components'
 
+import Layout from '../components/Layout'
+
 interface Image {
   image: {
     id: string
@@ -44,15 +46,18 @@ const Post = ({
   const coordinates = JSON.parse(location.coordinates).coordinates
 
   return (
-    <div>
-      <h1>{ title }</h1>
-      <ul>
-        <li><strong>Latitude: </strong>{coordinates[0]}</li>
-        <li><strong>Longitude: </strong>{coordinates[1]}</li>
-      </ul>
-      { images.map(({image: {publicURL, id}, caption}) => <ImageWrapper><Image key={id} src={publicURL} alt={caption} /></ImageWrapper> )}
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-    </div>)
+    <Layout>
+      <div>
+        <h1>{ title }</h1>
+        <ul>
+          <li><strong>Latitude: </strong>{coordinates[0]}</li>
+          <li><strong>Longitude: </strong>{coordinates[1]}</li>
+        </ul>
+        { images.map(({image: {publicURL, id}, caption}) => <ImageWrapper  key={id}><Image src={publicURL} alt={caption} /></ImageWrapper> )}
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+      </div>
+    </Layout>
+  )
 }
 
 const ImageWrapper = styled.div`

@@ -24,6 +24,24 @@ const config: GatsbyConfig = {
         name: 'blog',
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Rampart One`,
+          'Zen+Kaku+Gothic+New:wght@400;500;900',
+        ],
+        display: 'fallback'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.inline\.svg$/
+        }
+      }
+    }
   ]
 };
 
