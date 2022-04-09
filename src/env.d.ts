@@ -14,3 +14,16 @@ interface Location {
   state: string
   town: string
 }
+
+interface Node {
+  node: {
+    frontmatter: {
+      date: string
+      title: string
+      images: PostImage[]
+    }
+    parent: {
+      relativeDirectory: string
+    }
+  }
+}

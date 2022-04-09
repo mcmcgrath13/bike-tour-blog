@@ -3,7 +3,7 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Mary Bikes`,
-    siteUrl: `mary-bikes.web.app`
+    siteUrl: `https://mary-bikes.web.app`
   },
   plugins: [
     "gatsby-plugin-netlify-cms",

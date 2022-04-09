@@ -2,8 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-import { Node } from '../pages/index'
-
 interface PostCardProps {
   node: Node
 }

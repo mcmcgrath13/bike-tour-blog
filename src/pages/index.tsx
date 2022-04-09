@@ -5,26 +5,6 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import PostCard from '../components/PostCard'
 
-interface Image {
-  image: {
-    publicURL: string
-  }
-  caption?: string
-}
-
-export interface Node {
-  node: {
-    frontmatter: {
-      date: string
-      title: string
-      images: Image[]
-    }
-    parent: {
-      relativeDirectory: string
-    }
-  }
-}
-
 interface HomePageProps {
   data: {
     allMarkdownRemark: {
