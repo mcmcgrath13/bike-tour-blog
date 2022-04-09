@@ -1,10 +1,8 @@
 import React from 'react'
-import {graphql} from 'gatsby'
-import styled from 'styled-components'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import PostImages from '../components/PostImages'
-
 
 interface PostProps {
   data: {
@@ -14,13 +12,13 @@ interface PostProps {
         location: Location
         title: string
         images: PostImage[]
-      },
+      }
       html: string
     }
   }
 }
 
-const Post = ({
+const Post: React.FC<PostProps> = ({
   data: {
     markdownRemark: {
       frontmatter: {
@@ -32,14 +30,14 @@ const Post = ({
       html
     }
   }
-}: PostProps) => {
+}) => {
   const coordinates = JSON.parse(location.coordinates).coordinates
 
   return (
     <Layout>
       <div>
         <PostImages images={images} />
-        <h1>{ title }</h1>
+        <h1>{title}</h1>
         <ul>
           <li><strong>Latitude: </strong>{coordinates[0]}</li>
           <li><strong>Longitude: </strong>{coordinates[1]}</li>
@@ -50,8 +48,7 @@ const Post = ({
   )
 }
 
-
-export const query  = graphql`
+export const query = graphql`
 query ($id: String)  {
   markdownRemark(id: {eq: $id}) {
     parent {
@@ -78,6 +75,5 @@ query ($id: String)  {
     html
   }
 }`
-
 
 export default Post

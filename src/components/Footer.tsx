@@ -1,14 +1,12 @@
-import React from 'react';
+import React from 'react'
 import styled from 'styled-components'
 
-import MaxWidthWrapper from './MaxWidthWrapper';
-
-const Footer = () => {
-  const year = (new Date).getFullYear();
+const Footer: React.FC = () => {
+  const year = (new Date()).getFullYear()
 
   return (
     <Wrapper>
-      <p>©{year} <a href="https://github.com/mcmcgrath13">@mcmcgrath13</a></p>
+      <p>©{year} <a href='https://github.com/mcmcgrath13'>@mcmcgrath13</a></p>
     </Wrapper>
   )
 }
@@ -20,4 +18,4 @@ const Wrapper = styled.div`
   place-content: center;
 `
 
-export default Footer;
+export default Footer

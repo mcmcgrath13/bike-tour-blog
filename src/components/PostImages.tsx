@@ -1,42 +1,45 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-import MaxWidthWrapper from './MaxWidthWrapper';
+import MaxWidthWrapper from './MaxWidthWrapper'
 
-interface PostImageProps {
+interface PostImagesProps {
   images: PostImage[]
 }
 
-const PostImages = ({ images }: PostImageProps) => {
+const PostImages: React.FC<PostImagesProps> = ({ images }) => {
   const [mainImage, setMainImage] = useState(images[0])
+
   return (
     <BackgroundColor>
-    <MaxWidthWrapper>
-    <OuterWrapper>
-      <MainImageWrapper>
-        <MainImage alt={mainImage?.caption} src={mainImage.image.publicURL} />
-      </MainImageWrapper>
+      <MaxWidthWrapper>
+        <OuterWrapper>
+          <MainImageWrapper>
+            <MainImage alt={mainImage?.caption} src={mainImage.image.publicURL} />
+          </MainImageWrapper>
 
-      <Gallery>
-        {
-            images.map((image) =>{
-              const {image: {publicURL, id}, caption} = image
-              return (<ImageWrapper onClick={() => setMainImage(image)} key={id}>
-                <GalleryImage src={publicURL} alt={caption} />
-              </ImageWrapper>)
+          <Gallery>
+            {
+            images.map((image) => {
+              const { image: { publicURL, id }, caption } = image
+              return (
+                <ImageWrapper onClick={() => setMainImage(image)} key={id}>
+                  <GalleryImage src={publicURL} alt={caption} />
+                </ImageWrapper>
+              )
             }
             )
         }
-      </Gallery>
-    </OuterWrapper>
+          </Gallery>
+        </OuterWrapper>
       </MaxWidthWrapper>
-      </BackgroundColor>
+    </BackgroundColor>
   )
 }
 
 const BackgroundColor = styled.div`
 background: var(--color-gray-700);
-`;
+`
 
 const ImageWrapper = styled.div`
   // width: 300px;
@@ -55,7 +58,7 @@ const MainImage = styled.img`
   height: 100%;
   display: block;
   object-fit: contain;
-`;
+`
 
 const OuterWrapper = styled.div`
   width: 100%;
@@ -81,4 +84,4 @@ const Gallery = styled.div`
   overflow: hidden;
 `
 
-export default PostImages;
+export default PostImages

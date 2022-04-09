@@ -4,13 +4,13 @@ import styled from 'styled-components'
 
 import { Node } from '../pages/index'
 
-interface Props {
+interface PostCardProps {
   node: Node
 }
 
-const PostCard = ({ node: { node: {frontmatter, parent} }}: Props) => {
-  const { title, date, images} = frontmatter;
-  const {image: { publicURL }, caption} = images[0];
+const PostCard: React.FC<PostCardProps> = ({ node: { node: { frontmatter, parent } } }) => {
+  const { title, date, images } = frontmatter
+  const { image: { publicURL }, caption } = images[0]
   return (
     <Wrapper>
       <Link to={`/${parent.relativeDirectory}`}>
@@ -18,7 +18,7 @@ const PostCard = ({ node: { node: {frontmatter, parent} }}: Props) => {
         <Content>
           <Title>{title}</Title>
           <Date>{date}</Date>
-      </Content>
+        </Content>
       </Link>
     </Wrapper>
   )
@@ -70,4 +70,4 @@ const Wrapper = styled.div`
     transition: transform 250ms;
   }
 `
-export default PostCard;
+export default PostCard

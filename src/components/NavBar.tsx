@@ -1,18 +1,18 @@
-import React from 'react';
+import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 import BikeIcon from '../images/bicycle-solid.inline.svg'
-import MaxWidthWrapper from './MaxWidthWrapper';
+import MaxWidthWrapper from './MaxWidthWrapper'
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
   return (
     <BackgroundColor>
       <MaxWidthWrapper>
         <Wrapper>
-          <Link to="/"><Title>Mary Bikes</Title></Link>
+          <Link to='/'><Title>Mary Bikes</Title></Link>
           <IconWrapper>
-            <Link to="/"><BikeIcon /></Link>
+            <Link to='/'><BikeIcon /></Link>
           </IconWrapper>
         </Wrapper>
       </MaxWidthWrapper>
@@ -22,7 +22,7 @@ const NavBar = () => {
 
 const BackgroundColor = styled.div`
   background: var(--color-primary);
-`;
+`
 
 const Wrapper = styled.nav`
   position: sticky;
@@ -51,4 +51,4 @@ const IconWrapper = styled.div`
   color: var(--color-light);
 `
 
-export default NavBar;
+export default NavBar

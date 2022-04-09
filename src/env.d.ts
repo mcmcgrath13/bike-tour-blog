@@ -1,3 +1,6 @@
+module '*.jpeg';
+module '*.svg';
+
 interface PostImage {
   image: {
     id: string
