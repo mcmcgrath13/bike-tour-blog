@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import PostCard from '../components/PostCard'
+import MaxWidthWrapper from '../components/MaxWidthWrapper'
 
 interface HomePageProps {
   data: {
@@ -18,9 +19,11 @@ const HomePage: React.FC<HomePageProps> = ({ data }) => {
 
   return (
     <Layout withHero>
-      <Wrapper>
-        {posts.map(n => <PostCard key={n.node.parent.relativeDirectory} node={n} />)}
-      </Wrapper>
+      <MaxWidthWrapper>
+        <Wrapper>
+          {posts.map(n => <PostCard key={n.node.parent.relativeDirectory} node={n} />)}
+        </Wrapper>
+      </MaxWidthWrapper>
     </Layout>
   )
 }
