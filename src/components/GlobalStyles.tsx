@@ -101,7 +101,7 @@ html, body, #root {
 }
 
 body {
-  background-color: var(--color-gray-100);
+  background-color: var(--color-light);
   font-family: var(--font-family-sans-serif);
 }
 

@@ -24,18 +24,16 @@ const PostCard = ({ node: { node: {frontmatter, parent} }}: Props) => {
   )
 }
 
-const Wrapper = styled.div`
-  position: relative;
-  --border-radius: 4px;
-`
-
 const Content = styled.div`
   position: absolute;
   bottom: 0;
-  background-color: hsla(40deg 12% 95% / .5);
+  background-color: hsla(40deg 12% 98%);
+  opacity: 65%;
+  transition: opacity 5000ms;
   width: 100%;
   padding: 4px 8px;
-  border-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
 `
 
 const Title = styled.h3`
@@ -53,5 +51,23 @@ const Image = styled.img`
   object-fit: cover;
   aspect-ratio: 1 / 1;
   border-radius: var(--border-radius);
+  transition: transform 500ms;
+`
+
+const Wrapper = styled.div`
+  position: relative;
+  overflow: hidden;
+  --border-radius: 4px;
+  border-radius: var(--border-radius);
+
+  &:hover ${Content} {
+    opacity: 70%;
+    transition: opacity 250ms;
+  }
+
+  &:hover ${Image} {
+    transform: scale(1.1);
+    transition: transform 250ms;
+  }
 `
 export default PostCard;

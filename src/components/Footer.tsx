@@ -1,6 +1,7 @@
 import React from 'react';
-
 import styled from 'styled-components'
+
+import MaxWidthWrapper from './MaxWidthWrapper';
 
 const Footer = () => {
   const year = (new Date).getFullYear();

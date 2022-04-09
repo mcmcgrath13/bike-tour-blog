@@ -7,7 +7,6 @@ import PostCard from '../components/PostCard';
 
 interface Image {
   image: {
-    id: string
     publicURL: string
   }
   caption?: string
@@ -40,7 +39,7 @@ const HomePage = ({ data }: HomePageProps) => {
   return (
     <Layout withHero={true}>
       <Wrapper>
-        { posts.map(n => <PostCard node={n} />) }
+        { posts.map(n => <PostCard key={n.node.parent.relativeDirectory} node={n} />) }
       </Wrapper>
     </Layout>
   )
@@ -49,8 +48,8 @@ const HomePage = ({ data }: HomePageProps) => {
 const Wrapper = styled.div`
   display: grid;
   gap: 16px;
-  grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
-  padding: 32px 0 16px;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  padding: 48px 32px 32px;
 `
 
 export const query  = graphql`
@@ -63,7 +62,6 @@ query allPosts {
           images {
             caption
             image {
-              id
               publicURL
             }
           }

@@ -7,7 +7,7 @@ import NavBar from './NavBar';
 
 import heroImage from '../images/cover.jpeg';
 
-const Layout = ({ children, withHero }) => {
+const Layout = ({ children, withHero = false }) => {
   return (
     <React.Fragment>
       <GlobalStyle />
@@ -21,9 +21,9 @@ const Layout = ({ children, withHero }) => {
           </Hero>
         }
 
-        <MaxWidthWrapper>
+        <ContentWrapper>
           {children}
-        </MaxWidthWrapper>
+        </ContentWrapper>
 
         <Footer />
       </Wrapper>
@@ -35,12 +35,10 @@ const Wrapper = styled.div`
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-color: var(--color-gray-100);
 `
 
-const MaxWidthWrapper = styled.div`
-  max-width: calc(1200 / 16 * 1rem);
-  padding: 0 32px;
-  margin: 0 auto;
+const ContentWrapper = styled.div`
   flex: 1;
 `
 

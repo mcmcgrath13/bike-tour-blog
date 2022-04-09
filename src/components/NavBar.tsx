@@ -3,23 +3,31 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 import BikeIcon from '../images/bicycle-solid.inline.svg'
+import MaxWidthWrapper from './MaxWidthWrapper';
 
 const NavBar = () => {
   return (
-    <Wrapper>
-      <Link to="/"><Title>Mary Bikes</Title></Link>
-      <IconWrapper>
-        <Link to="/"><BikeIcon /></Link>
-      </IconWrapper>
-    </Wrapper>
+    <BackgroundColor>
+      <MaxWidthWrapper>
+        <Wrapper>
+          <Link to="/"><Title>Mary Bikes</Title></Link>
+          <IconWrapper>
+            <Link to="/"><BikeIcon /></Link>
+          </IconWrapper>
+        </Wrapper>
+      </MaxWidthWrapper>
+    </BackgroundColor>
   )
 }
+
+const BackgroundColor = styled.div`
+  background: var(--color-primary);
+`;
 
 const Wrapper = styled.nav`
   position: sticky;
   top: 0;
   height: 5rem;
-  background: var(--color-primary);
   padding: 12px 24px;
   display: flex;
   justify-content: space-between;

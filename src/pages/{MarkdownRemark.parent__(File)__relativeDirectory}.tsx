@@ -3,27 +3,17 @@ import {graphql} from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/Layout'
+import PostImages from '../components/PostImages'
 
-interface Image {
-  image: {
-    id: string
-    publicURL: string
-  }
-  caption?: string
-}
 
 interface PostProps {
   data: {
     markdownRemark: {
       frontmatter: {
         date: string
-        location: {
-          coordinates: string
-          state: string
-          town: string
-        }
+        location: Location
         title: string
-        images: Image[]
+        images: PostImage[]
       },
       html: string
     }
@@ -48,27 +38,18 @@ const Post = ({
   return (
     <Layout>
       <div>
+        <PostImages images={images} />
         <h1>{ title }</h1>
         <ul>
           <li><strong>Latitude: </strong>{coordinates[0]}</li>
           <li><strong>Longitude: </strong>{coordinates[1]}</li>
         </ul>
-        { images.map(({image: {publicURL, id}, caption}) => <ImageWrapper  key={id}><Image src={publicURL} alt={caption} /></ImageWrapper> )}
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </Layout>
   )
 }
 
-const ImageWrapper = styled.div`
-  width: 300px;
-  height: 300px;
-`
-
-const Image = styled.img`
-  width: 100%;
-  height: 100%;
-`
 
 export const query  = graphql`
 query ($id: String)  {
