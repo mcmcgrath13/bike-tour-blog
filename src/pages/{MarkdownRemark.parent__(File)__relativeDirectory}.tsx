@@ -4,7 +4,6 @@ import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import PostImages from '../components/PostImages'
-import MaxWidthWrapper from '../components/MaxWidthWrapper'
 
 interface PostProps {
   data: {
@@ -38,22 +37,22 @@ const Post: React.FC<PostProps> = ({
   return (
     <Layout>
       <PostImages images={images} />
-      <MaxWidthWrapper>
-        <Wrapper>
-          <h1>{title}</h1>
-          <ul>
-            <li><strong>Latitude: </strong>{coordinates[0]}</li>
-            <li><strong>Longitude: </strong>{coordinates[1]}</li>
-          </ul>
-          <div dangerouslySetInnerHTML={{ __html: html }} />
-        </Wrapper>
-      </MaxWidthWrapper>
+      <Wrapper>
+        <h1>{title}</h1>
+        <ul>
+          <li><strong>Latitude: </strong>{coordinates[0]}</li>
+          <li><strong>Longitude: </strong>{coordinates[1]}</li>
+        </ul>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+      </Wrapper>
     </Layout>
   )
 }
 
 const Wrapper = styled.article`
   padding: var(--gutter);
+  max-width: 65ch;
+  margin: 0 auto;
 `
 
 export const query = graphql`

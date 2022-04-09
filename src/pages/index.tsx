@@ -4,7 +4,6 @@ import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import PostCard from '../components/PostCard'
-import MaxWidthWrapper from '../components/MaxWidthWrapper'
 
 interface HomePageProps {
   data: {
@@ -19,11 +18,9 @@ const HomePage: React.FC<HomePageProps> = ({ data }) => {
 
   return (
     <Layout withHero>
-      <MaxWidthWrapper>
-        <Wrapper>
-          {posts.map(n => <PostCard key={n.node.parent.relativeDirectory} node={n} />)}
-        </Wrapper>
-      </MaxWidthWrapper>
+      <Wrapper>
+        {posts.map(n => <PostCard key={n.node.parent.relativeDirectory} node={n} />)}
+      </Wrapper>
     </Layout>
   )
 }
@@ -32,7 +29,7 @@ const Wrapper = styled.div`
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  padding: 48px 32px 32px;
+  padding: var(--gutter);
 `
 
 export const query = graphql`

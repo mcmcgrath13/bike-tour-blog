@@ -3,8 +3,6 @@ import styled from 'styled-components'
 
 import { QUERIES } from '../constants'
 
-import MaxWidthWrapper from './MaxWidthWrapper'
-
 const activeImageStyles = {
   border: '2px solid white'
 }
@@ -42,6 +40,12 @@ const PostImages: React.FC<PostImagesProps> = ({ images }) => {
     </BackgroundColor>
   )
 }
+
+const MaxWidthWrapper = styled.div`
+  max-width: 85rem;
+  margin: 0 auto;
+  background: var(--background-color);
+`
 
 const BackgroundColor = styled.div`
   background: var(--color-gray-800);

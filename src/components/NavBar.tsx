@@ -3,32 +3,24 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 import BikeIcon from '../images/bicycle-solid.inline.svg'
-import MaxWidthWrapper from './MaxWidthWrapper'
 
 const NavBar: React.FC = () => {
   return (
-    <BackgroundColor>
-      <MaxWidthWrapper>
-        <Wrapper>
-          <Link to='/'><Title>Mary Bikes</Title></Link>
-          <IconWrapper>
-            <Link to='/'><BikeIcon /></Link>
-          </IconWrapper>
-        </Wrapper>
-      </MaxWidthWrapper>
-    </BackgroundColor>
+    <Wrapper>
+      <Link to='/'><Title>Mary Bikes</Title></Link>
+      <IconWrapper>
+        <Link to='/'><BikeIcon /></Link>
+      </IconWrapper>
+    </Wrapper>
   )
 }
-
-const BackgroundColor = styled.div`
-  background: var(--color-primary);
-`
 
 const Wrapper = styled.nav`
   position: sticky;
   top: 0;
   height: 5rem;
   padding: 12px var(--gutter);
+  background: var(--color-primary);
   display: flex;
   justify-content: space-between;
   align-items: baseline;

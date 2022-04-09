@@ -46,7 +46,8 @@ const ContentWrapper = styled.div`
 `
 
 const Hero = styled.div`
-  height: clamp(150px, 25vh, 500px);
+  height: clamp(150px, 35vh, 700px);
+  width: 100vw;
 `
 
 const Image = styled.img`

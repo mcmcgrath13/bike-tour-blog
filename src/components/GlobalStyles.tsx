@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components/macro'
 
-import { COLORS, WEIGHTS, FAMILIES } from '../constants'
+import { COLORS, WEIGHTS, FAMILIES, QUERIES } from '../constants'
 
 const GlobalStyles = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -71,6 +71,14 @@ html {
   --font-family-logo: ${FAMILIES.logo};
 
   --gutter: 24px;
+
+  @media ${QUERIES.laptopAndUp} {
+    --gutter: 48px;
+  }
+
+  @media ${QUERIES.desktopAndUp} {
+    --gutter: 64px;
+  }
 }
 
 
