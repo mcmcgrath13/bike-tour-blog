@@ -1,8 +1,10 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import PostImages from '../components/PostImages'
+import MaxWidthWrapper from '../components/MaxWidthWrapper'
 
 interface PostProps {
   data: {
@@ -35,18 +37,24 @@ const Post: React.FC<PostProps> = ({
 
   return (
     <Layout>
-      <div>
-        <PostImages images={images} />
-        <h1>{title}</h1>
-        <ul>
-          <li><strong>Latitude: </strong>{coordinates[0]}</li>
-          <li><strong>Longitude: </strong>{coordinates[1]}</li>
-        </ul>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
-      </div>
+      <PostImages images={images} />
+      <MaxWidthWrapper>
+        <Wrapper>
+          <h1>{title}</h1>
+          <ul>
+            <li><strong>Latitude: </strong>{coordinates[0]}</li>
+            <li><strong>Longitude: </strong>{coordinates[1]}</li>
+          </ul>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </Wrapper>
+      </MaxWidthWrapper>
     </Layout>
   )
 }
+
+const Wrapper = styled.article`
+  padding: var(--gutter);
+`
 
 export const query = graphql`
 query ($id: String)  {

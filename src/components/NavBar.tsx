@@ -28,7 +28,7 @@ const Wrapper = styled.nav`
   position: sticky;
   top: 0;
   height: 5rem;
-  padding: 12px 24px;
+  padding: 12px var(--gutter);
   display: flex;
   justify-content: space-between;
   align-items: baseline;
