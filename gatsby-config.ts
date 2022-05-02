@@ -1,35 +1,35 @@
-import type { GatsbyConfig } from "gatsby";
+import type { GatsbyConfig } from 'gatsby'
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Mary Bikes`,
-    siteUrl: `https://mary-bikes.web.app`
+    title: 'Mary Bikes',
+    siteUrl: 'https://mary-bikes.web.app'
   },
   plugins: [
-    "gatsby-plugin-netlify-cms",
-    "gatsby-plugin-styled-components",
-    "gatsby-transformer-remark",
-     {
+    'gatsby-plugin-netlify-cms',
+    'gatsby-plugin-styled-components',
+    'gatsby-transformer-remark',
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
-        "name": "pages",
-        "path": "./src/pages/"
+        name: 'pages',
+        path: './src/pages/'
       },
-      __key: "pages"
+      __key: 'pages'
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: './content/blog',
-        name: 'blog',
-      },
+        name: 'blog'
+      }
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: 'gatsby-plugin-google-fonts',
       options: {
         fonts: [
-          `Rampart One`,
-          'Zen+Kaku+Gothic+New:wght@400;500;700;900',
+          'Rampart One',
+          'Zen+Kaku+Gothic+New:wght@400;500;700;900'
         ],
         display: 'fallback'
       }
@@ -43,6 +43,6 @@ const config: GatsbyConfig = {
       }
     }
   ]
-};
+}
 
-export default config;
+export default config

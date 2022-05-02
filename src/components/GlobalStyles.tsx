@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components/macro'
+import { createGlobalStyle } from "styled-components/macro";
 
-import { COLORS, WEIGHTS, FAMILIES, QUERIES } from '../constants'
+import { COLORS, WEIGHTS, FAMILIES, QUERIES } from "../constants";
 
 const GlobalStyles = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -140,6 +140,6 @@ a {
 a:hover {
   text-decoration: none;
 }
-`
+`;
 
-export default GlobalStyles
+export default GlobalStyles;

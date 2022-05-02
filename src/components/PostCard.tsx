@@ -1,14 +1,21 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
 
 interface PostCardProps {
-  node: Node
+  node: Node;
 }
 
-const PostCard: React.FC<PostCardProps> = ({ node: { node: { frontmatter, parent } } }) => {
-  const { title, date, images } = frontmatter
-  const { image: { publicURL }, caption } = images[0]
+const PostCard: React.FC<PostCardProps> = ({
+  node: {
+    node: { frontmatter, parent },
+  },
+}) => {
+  const { title, date, images } = frontmatter;
+  const {
+    image: { publicURL },
+    caption,
+  } = images[0];
   return (
     <Wrapper>
       <Link to={`/${parent.relativeDirectory}`}>
@@ -19,8 +26,8 @@ const PostCard: React.FC<PostCardProps> = ({ node: { node: { frontmatter, parent
         </Content>
       </Link>
     </Wrapper>
-  )
-}
+  );
+};
 
 const Content = styled.div`
   position: absolute;
@@ -33,16 +40,16 @@ const Content = styled.div`
   border-bottom-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
   backdrop-filter: blur(8px);
-`
+`;
 
 const Title = styled.h3`
   font-size: 1.25rem;
   font-weight: var(--font-weight-bold);
-`
+`;
 
 const Date = styled.p`
   font-weight: var(--font-weight-medium);
-`
+`;
 
 const Image = styled.img`
   display: block;
@@ -51,20 +58,19 @@ const Image = styled.img`
   aspect-ratio: 1 / 1;
   border-radius: var(--border-radius);
   transition: transform 600ms;
-`
+`;
 
 const Wrapper = styled.div`
   position: relative;
   overflow: hidden;
   --border-radius: 4px;
   border-radius: var(--border-radius);
-  filter:
-    drop-shadow(1px 2px 1px hsla(28deg, 5%, 12%, 40%))
-    drop-shadow(2px 4px 2px hsla(28deg, 5%, 14%, 30%))
-    drop-shadow(3px 6px 2px hsla(28deg, 5%, 16%, 20%));
+  filter: drop-shadow(1px 2px 1px hsla(28deg, 5%, 12%, 30%))
+    drop-shadow(2px 4px 2px hsla(28deg, 5%, 14%, 20%))
+    drop-shadow(3px 6px 2px hsla(28deg, 5%, 16%, 10%));
 
   &:hover ${Content} {
-    opacity: 70%;
+    opacity: 75%;
     transition: opacity 400ms;
   }
 
@@ -74,5 +80,5 @@ const Wrapper = styled.div`
       transition: transform 400ms;
     }
   }
-`
-export default PostCard
+`;
+export default PostCard;

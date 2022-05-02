@@ -1,0 +1,61 @@
+backend:
+  name: github
+  repo: mcmcgrath13/bike-tour-blog
+  branch: main
+
+local_backend: true
+
+media_folder: ''
+public_folder: ''
+
+collections:
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{year}}-{{month}}-{{day}}-{{title}}/{{slug}}'
+    fields:
+      - label: 'Images'
+        name: 'images'
+        widget: 'list'
+        required: true
+        fields:
+          - label: 'Image'
+            name: 'image'
+            widget: 'image'
+            required: true
+          - label: 'Caption'
+            name: 'caption'
+            widget: 'string'
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+      - label: 'Publish Date'
+        name: 'date'
+        widget: 'date'
+        format: 'YYYY-MM-DD'
+      - label: 'Location'
+        name: 'location'
+        widget: 'object'
+        fields:
+          - label: 'Coordinates'
+            name: coordinates
+            widget: map
+          - label: 'State'
+            name: state
+            widget: string
+          - label: 'Town'
+            name: town
+            widget: string
+      - label: 'Miles'
+        name: 'miles'
+        widget: 'number'
+        default: 0
+        value_type: "int"
+        min: 0
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'

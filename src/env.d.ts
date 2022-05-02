@@ -1,29 +1,29 @@
-module '*.jpeg';
-module '*.svg';
+module "*.jpeg";
+module "*.svg";
 
 interface PostImage {
   image: {
-    id: string
-    publicURL: string
-  }
-  caption?: string
+    id: string;
+    publicURL: string;
+  };
+  caption?: string;
 }
 
 interface Location {
-  coordinates: string
-  state: string
-  town: string
+  coordinates: string;
+  state: string;
+  town: string;
 }
 
 interface Node {
   node: {
     frontmatter: {
-      date: string
-      title: string
-      images: PostImage[]
-    }
+      date: string;
+      title: string;
+      images: PostImage[];
+    };
     parent: {
-      relativeDirectory: string
-    }
-  }
+      relativeDirectory: string;
+    };
+  };
 }

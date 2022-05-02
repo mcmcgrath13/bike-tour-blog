@@ -1,11 +1,9 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
-const MarkdownContent: React.FC<{html: string}> = ({ html }) => {
-  return (
-    <Wrapper dangerouslySetInnerHTML={{ __html: html }} />
-  )
-}
+const MarkdownContent: React.FC<{ html: string }> = ({ html }) => {
+  return <Wrapper dangerouslySetInnerHTML={{ __html: html }} />;
+};
 
 const Wrapper = styled.div`
   & h1 {
@@ -48,23 +46,24 @@ const Wrapper = styled.div`
     margin-bottom: 1rem;
   }
 
-  & p + ol, p + ul {
+  & p + ol,
+  p + ul {
     margin-top: -0.5rem;
   }
 
-  & ul,ol {
+  & ul,
+  ol {
     padding-left: 1.5rem;
     margin-bottom: 1rem;
   }
 
   & ul {
-    list-style-type: '- ';
+    list-style-type: "- ";
   }
-
 
   & ol {
     list-style-type: decimal;
   }
-`
+`;
 
-export default MarkdownContent
+export default MarkdownContent;

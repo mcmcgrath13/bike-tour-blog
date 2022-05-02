@@ -1,21 +1,23 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const Footer: React.FC = () => {
-  const year = (new Date()).getFullYear()
+  const year = new Date().getFullYear();
 
   return (
     <Wrapper>
-      <p>©{year} <a href='https://github.com/mcmcgrath13'>@mcmcgrath13</a></p>
+      <p>
+        ©{year} <a href="https://github.com/mcmcgrath13">@mcmcgrath13</a>
+      </p>
     </Wrapper>
-  )
-}
+  );
+};
 
 const Wrapper = styled.div`
   height: 7rem;
   background: var(--color-secondary);
   display: grid;
   place-content: center;
-`
+`;
 
-export default Footer
+export default Footer;

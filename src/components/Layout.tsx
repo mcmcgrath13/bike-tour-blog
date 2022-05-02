@@ -1,14 +1,14 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
-import Footer from './Footer'
-import GlobalStyle from './GlobalStyles'
-import NavBar from './NavBar'
+import Footer from "./Footer";
+import GlobalStyle from "./GlobalStyles";
+import NavBar from "./NavBar";
 
-import heroImage from '../images/cover.jpeg'
+import heroImage from "../images/cover.jpeg";
 
 interface LayoutProps {
-  withHero?: boolean
+  withHero?: boolean;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children, withHero = false }) => {
@@ -19,37 +19,36 @@ const Layout: React.FC<LayoutProps> = ({ children, withHero = false }) => {
       <Wrapper>
         <NavBar />
 
-        {withHero &&
+        {withHero && (
           <Hero>
-            <Image src={heroImage} alt='TODO' />
-          </Hero>}
+            <Image src={heroImage} alt="TODO" />
+          </Hero>
+        )}
 
-        <ContentWrapper>
-          {children}
-        </ContentWrapper>
+        <ContentWrapper>{children}</ContentWrapper>
 
         <Footer />
       </Wrapper>
     </>
-  )
-}
+  );
+};
 
 const Wrapper = styled.div`
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   background-color: var(--color-gray-100);
-`
+`;
 
 const ContentWrapper = styled.div`
   flex: 1;
   isolation: isolate;
-`
+`;
 
 const Hero = styled.div`
   height: clamp(150px, 35vh, 700px);
   width: 100vw;
-`
+`;
 
 const Image = styled.img`
   display: block;
@@ -57,6 +56,6 @@ const Image = styled.img`
   height: 100%;
   object-fit: cover;
   aspect-ratio: 1 / 1;
-`
+`;
 
-export default Layout
+export default Layout;

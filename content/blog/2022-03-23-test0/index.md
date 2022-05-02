@@ -5,12 +5,12 @@ images:
   - image: bd5ab352-d5a6-4873-b88c-a06e707de43f.jpeg
     caption: Stelllllaaaaaaaa
 title: Test
-date: 2022-03-22
+date: 2022-03-23
 location:
   coordinates: '{"type":"Point","coordinates":[-71.1685608,41.4936805]}'
   state: RI
   town: Little Compton
-miles: 4
+miles: 0
 ---
 
 # Hello, World
