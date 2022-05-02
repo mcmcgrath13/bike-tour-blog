@@ -84,7 +84,7 @@ const MainImage = styled.img`
 
 const MainImageCaption = styled.figcaption`
   color: var(--color-light);
-  padding: 0.5rem 3rem 0.7rem;
+  padding: 0.5rem 1rem 0.5rem;
   font-weight: var(--font-weight-medium);
   text-align: center;
 `;
@@ -96,7 +96,7 @@ const OuterWrapper = styled.div`
   display: grid;
   gap: 1rem;
   grid-template-areas: "main-image" "gallery";
-  grid-template-rows: 5fr minmax(10rem, 1fr);
+  grid-template-rows: 6fr minmax(5rem, 1fr);
 
   @media ${QUERIES.laptopAndUp} {
     grid-template-areas: "main-image gallery";
@@ -119,6 +119,7 @@ const MainImageWrapper = styled.figure`
   min-height: 0;
   width: 100%;
   height: 100%;
+  padding: 0.25rem;
   background: var(--color-gray-900);
   display: grid;
   grid-template-rows: minmax(0px, 1fr) auto;

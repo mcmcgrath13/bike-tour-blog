@@ -65,9 +65,9 @@ const Wrapper = styled.div`
   overflow: hidden;
   --border-radius: 4px;
   border-radius: var(--border-radius);
-  filter: drop-shadow(1px 2px 1px hsla(28deg, 5%, 12%, 30%))
-    drop-shadow(2px 4px 2px hsla(28deg, 5%, 14%, 20%))
-    drop-shadow(3px 6px 2px hsla(28deg, 5%, 16%, 10%));
+  filter: drop-shadow(1px 2px 1px hsla(28deg, 5%, 32%, 30%))
+    drop-shadow(2px 4px 2px hsla(28deg, 5%, 38%, 20%))
+    drop-shadow(3px 6px 2px hsla(28deg, 5%, 42%, 10%));
 
   &:hover ${Content} {
     opacity: 75%;
