@@ -118,6 +118,7 @@ const Facts = styled.ul`
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  margin-bottom: 1rem;
 `;
 
 const Fact = styled.li`

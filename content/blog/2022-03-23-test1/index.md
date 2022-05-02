@@ -3,7 +3,7 @@ images:
   - image: bf9146fe-886b-4a37-9b10-558d8d80661e.jpeg
     caption: What is this even from?
   - image: bd5ab352-d5a6-4873-b88c-a06e707de43f.jpeg
-    caption: Stelllllaaaaaaaa
+    caption: Lomo praxis banjo wayfarers. *Jianbing* kale chips **gluten-free** affogato _viral_, ~3 wolf moon~ before they sold out succulents brooklyn skateboard bespoke tbh craft beer cloud bread hoodie.
 title: Test
 date: 2022-03-24
 location:

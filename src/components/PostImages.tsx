@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 import { QUERIES } from "../constants";
 
@@ -18,7 +18,7 @@ const PostImages: React.FC<PostImagesProps> = ({ images }) => {
     <BackgroundColor>
       <MaxWidthWrapper>
         <OuterWrapper>
-          <MainImageWrapper>
+          <MainImageWrapper key={mainImage.image.publicURL}>
             <MainImage
               alt={mainImage?.caption}
               src={mainImage.image.publicURL}
@@ -84,8 +84,9 @@ const MainImage = styled.img`
 
 const MainImageCaption = styled.figcaption`
   color: var(--color-light);
-  padding: 0.5rem 1rem 0.7rem;
+  padding: 0.5rem 3rem 0.7rem;
   font-weight: var(--font-weight-medium);
+  text-align: center;
 `;
 
 const OuterWrapper = styled.div`
@@ -104,6 +105,15 @@ const OuterWrapper = styled.div`
   }
 `;
 
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+
 const MainImageWrapper = styled.figure`
   grid-area: main-image;
   min-height: 0;
@@ -113,6 +123,9 @@ const MainImageWrapper = styled.figure`
   display: grid;
   grid-template-rows: minmax(0px, 1fr) auto;
   grid-template-columns: 1fr;
+  & > * {
+    animation: ${fadeIn} 500ms;
+  }
 `;
 
 const Gallery = styled.div`
