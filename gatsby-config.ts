@@ -29,7 +29,7 @@ const config: GatsbyConfig = {
       options: {
         fonts: [
           `Rampart One`,
-          'Zen+Kaku+Gothic+New:wght@400;500;900',
+          'Zen+Kaku+Gothic+New:wght@400;500;700;900',
         ],
         display: 'fallback'
       }

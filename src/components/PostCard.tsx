@@ -32,6 +32,7 @@ const Content = styled.div`
   padding: 4px 8px;
   border-bottom-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
+  backdrop-filter: blur(8px);
 `
 
 const Title = styled.h3`
@@ -49,7 +50,7 @@ const Image = styled.img`
   object-fit: cover;
   aspect-ratio: 1 / 1;
   border-radius: var(--border-radius);
-  transition: transform 500ms;
+  transition: transform 600ms;
 `
 
 const Wrapper = styled.div`
@@ -57,15 +58,21 @@ const Wrapper = styled.div`
   overflow: hidden;
   --border-radius: 4px;
   border-radius: var(--border-radius);
+  filter:
+    drop-shadow(1px 2px 1px hsla(28deg, 5%, 12%, 40%))
+    drop-shadow(2px 4px 2px hsla(28deg, 5%, 14%, 30%))
+    drop-shadow(3px 6px 2px hsla(28deg, 5%, 16%, 20%));
 
   &:hover ${Content} {
     opacity: 70%;
-    transition: opacity 250ms;
+    transition: opacity 400ms;
   }
 
-  &:hover ${Image} {
-    transform: scale(1.1);
-    transition: transform 250ms;
+  @media (prefers-reduced-motion: no-preference) {
+    &:hover ${Image} {
+      transform: scale(1.1);
+      transition: transform 400ms;
+    }
   }
 `
 export default PostCard

@@ -17,6 +17,8 @@ const NavBar: React.FC = () => {
 
 const Wrapper = styled.nav`
   position: sticky;
+  isolation: isolate;
+  z-index: 1;
   top: 0;
   height: 5rem;
   padding: 12px var(--gutter);
@@ -24,6 +26,10 @@ const Wrapper = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  filter:
+    drop-shadow(1px 2px 2px hsla(28deg, 5%, 12%, 40%))
+    drop-shadow(2px 4px 3px hsla(28deg, 5%, 14%, 30%))
+    drop-shadow(3px 6px 4px hsla(28deg, 5%, 16%, 20%));
 
   /* header links should be unstyled */
   & > a {

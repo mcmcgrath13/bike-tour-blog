@@ -43,6 +43,7 @@ const Wrapper = styled.div`
 
 const ContentWrapper = styled.div`
   flex: 1;
+  isolation: isolate;
 `
 
 const Hero = styled.div`

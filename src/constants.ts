@@ -16,8 +16,9 @@ export const COLORS = {
 }
 
 export const WEIGHTS = {
-  normal: 400,
-  medium: 500,
+  light: 400,
+  normal: 500,
+  medium: 700,
   bold: 900
 }
 

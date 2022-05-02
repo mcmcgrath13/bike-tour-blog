@@ -62,6 +62,7 @@ html {
   --color-secondary: ${COLORS.secondary};
   --color-urgent: ${COLORS.urgent};
 
+  --font-weight-normal: ${WEIGHTS.light};
   --font-weight-normal: ${WEIGHTS.normal};
   --font-weight-medium: ${WEIGHTS.medium};
   --font-weight-bold: ${WEIGHTS.bold};

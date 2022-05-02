@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import PostImages from '../components/PostImages'
+import MarkdownContent from '../components/MarkdownContent'
 
 interface PostProps {
   data: {
@@ -43,7 +44,7 @@ const Post: React.FC<PostProps> = ({
           <li><strong>Latitude: </strong>{coordinates[0]}</li>
           <li><strong>Longitude: </strong>{coordinates[1]}</li>
         </ul>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <MarkdownContent html={html} />
       </Wrapper>
     </Layout>
   )
@@ -51,7 +52,7 @@ const Post: React.FC<PostProps> = ({
 
 const Wrapper = styled.article`
   padding: var(--gutter);
-  max-width: 65ch;
+  max-width: 60ch;
   margin: 0 auto;
 `
 
