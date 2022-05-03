@@ -28,7 +28,10 @@
     "netlify-cms-app": "^2.15.69",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.3",
+    "vega": "^5.22.1",
+    "vega-embed": "^6.20.8",
+    "vega-lite": "^5.2.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.21",
@@ -42,6 +45,9 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "firebase-tools": "^10.6.0",
+    "topojson-client": "^3.1.0",
+    "topojson-server": "^3.0.1",
+    "topojson-simplify": "^3.0.3",
     "typescript": "^4.6.2"
   }
 }

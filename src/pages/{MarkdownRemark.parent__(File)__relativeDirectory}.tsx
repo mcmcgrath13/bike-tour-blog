@@ -2,9 +2,12 @@ import React from "react";
 import { graphql } from "gatsby";
 import styled from "styled-components";
 
+import { QUERIES } from "../constants";
+
 import Layout from "../components/Layout";
 import PostImages from "../components/PostImages";
 import MarkdownContent from "../components/MarkdownContent";
+import LocationMap from "../components/LocationMap";
 
 const latLongString = (deg: number, lat: boolean) => {
   const absolute = Math.abs(deg);
@@ -73,6 +76,9 @@ const Post: React.FC<PostProps> = ({
       <Wrapper>
         <Title>{title}</Title>
         <SubTitle>{date}</SubTitle>
+        <LocationMapWrapper>
+          <LocationMap latitude={coordinates[1]} longitude={coordinates[0]} />
+        </LocationMapWrapper>
         <Facts>
           <Fact>
             <strong>Location: </strong>
@@ -125,6 +131,20 @@ const Fact = styled.li`
   background: var(--color-light);
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
+`;
+
+const LocationMapWrapper = styled.div`
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: -1.5rem;
+  margin-bottom: 1rem;
+
+  @media ${QUERIES.tabletAndUp} {
+    float: right;
+    margin-top: -8rem; /* 3rem * 1.5 + 0.5rem + 1.5rem * 1.5 + 2rem */
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
 `;
 
 const Wrapper = styled.article`

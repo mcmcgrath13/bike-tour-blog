@@ -71,6 +71,11 @@ const GalleryImage = styled.img`
     filter: brightness(100%);
     transition: filter 250ms;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    width: 100%;
+    height: revert;
+  }
 `;
 
 const MainImage = styled.img`

@@ -12,7 +12,7 @@ export const COLORS = {
   },
   primary: "hsl(224deg 30% 40%)",
   secondary: "hsl(158deg 29% 50%)",
-  urgent: "hsl(0deg 55% 54%)",
+  urgent: "hsl(29deg 80% 50%)",
 };
 
 export const WEIGHTS = {
