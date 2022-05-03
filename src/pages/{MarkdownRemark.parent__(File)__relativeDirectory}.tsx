@@ -74,11 +74,14 @@ const Post: React.FC<PostProps> = ({
     <Layout>
       <PostImages images={images} />
       <Wrapper>
+        <LocationMapWrapperTablet>
+          <LocationMap latitude={coordinates[1]} longitude={coordinates[0]} />
+        </LocationMapWrapperTablet>
         <Title>{title}</Title>
         <SubTitle>{date}</SubTitle>
-        <LocationMapWrapper>
+        <LocationMapWrapperMobile>
           <LocationMap latitude={coordinates[1]} longitude={coordinates[0]} />
-        </LocationMapWrapper>
+        </LocationMapWrapperMobile>
         <Facts>
           <Fact>
             <strong>Location: </strong>
@@ -133,15 +136,33 @@ const Fact = styled.li`
   border-radius: 0.25rem;
 `;
 
-const LocationMapWrapper = styled.div`
+const Header = styled.div`
+  display: grid;
+  grid-template-areas: "title" "subtitle" "map" "facts";
+
+  @media ${QUERIES.tabletAndUp} {
+    grid-template-areas: "title map" "subtitle map" "facts map";
+  }
+`
+
+const LocationMapWrapperMobile = styled.div`
   margin: 0 auto;
   width: fit-content;
   margin-top: -1.5rem;
   margin-bottom: 1rem;
 
   @media ${QUERIES.tabletAndUp} {
+    display: none;
+  }
+`;
+
+const LocationMapWrapperTablet = styled.div`
+  display: none;
+
+  @media ${QUERIES.tabletAndUp} {
+    display: revert;
     float: right;
-    margin-top: -8rem; /* 3rem * 1.5 + 0.5rem + 1.5rem * 1.5 + 2rem */
+    margin-top: 0.5rem;
     margin-right: 2rem;
     margin-bottom: 0;
   }

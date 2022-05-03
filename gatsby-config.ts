@@ -9,6 +9,7 @@ const config: GatsbyConfig = {
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-styled-components',
     'gatsby-transformer-remark',
+    "gatsby-plugin-react-helmet",
     {
       resolve: 'gatsby-source-filesystem',
       options: {
