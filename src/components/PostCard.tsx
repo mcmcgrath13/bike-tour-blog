@@ -32,9 +32,9 @@ const PostCard: React.FC<PostCardProps> = ({
 const Content = styled.div`
   position: absolute;
   bottom: 0;
-  background-color: hsla(40deg 12% 98%);
-  opacity: 65%;
-  transition: opacity 5000ms;
+  background-color: var(--color-gray-100);
+  opacity: 70%;
+  transition: opacity 1000ms;
   width: 100%;
   padding: 4px 8px;
   border-bottom-left-radius: var(--border-radius);
@@ -57,28 +57,19 @@ const Image = styled.img`
   object-fit: cover;
   aspect-ratio: 1 / 1;
   border-radius: var(--border-radius);
-  transition: transform 600ms;
 `;
 
 const Wrapper = styled.div`
   position: relative;
-  overflow: hidden;
   --border-radius: 4px;
   border-radius: var(--border-radius);
-  filter: drop-shadow(1px 2px 1px hsla(28deg, 5%, 32%, 30%))
-    drop-shadow(2px 4px 2px hsla(28deg, 5%, 38%, 20%))
-    drop-shadow(3px 6px 2px hsla(28deg, 5%, 42%, 10%));
+  filter: drop-shadow(0.1rem 0.2rem 0.1rem hsla(28deg, 5%, 32%, 30%))
+    drop-shadow(0.2rem 0.4rem 0.2rem hsla(28deg, 5%, 38%, 20%))
+    drop-shadow(0.3rem 0.6rem 0.2rem hsla(28deg, 5%, 42%, 10%));
 
   &:hover ${Content} {
-    opacity: 75%;
+    opacity: 85%;
     transition: opacity 400ms;
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    &:hover ${Image} {
-      transform: scale(1.1);
-      transition: transform 400ms;
-    }
   }
 `;
 export default PostCard;

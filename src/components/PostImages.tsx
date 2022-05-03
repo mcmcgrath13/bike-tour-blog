@@ -33,13 +33,13 @@ const PostImages: React.FC<PostImagesProps> = ({ images }) => {
                 caption,
               } = image;
               return (
-                <ImageWrapper onClick={() => setMainImage(image)} key={id}>
-                  <GalleryImage
-                    src={publicURL}
-                    alt={caption}
-                    style={image === mainImage ? activeImageStyles : {}}
-                  />
-                </ImageWrapper>
+                <GalleryImage
+                  onClick={() => setMainImage(image)}
+                  key={id}
+                  src={publicURL}
+                  alt={caption}
+                  style={image === mainImage ? activeImageStyles : {}}
+                />
               );
             })}
           </Gallery>
@@ -59,10 +59,8 @@ const BackgroundColor = styled.div`
   background: var(--color-gray-800);
 `;
 
-const ImageWrapper = styled.div``;
-
 const GalleryImage = styled.img`
-  width: 100%;
+  display: block;
   height: 100%;
   object-fit: cover;
   aspect-ratio: 1 / 1;

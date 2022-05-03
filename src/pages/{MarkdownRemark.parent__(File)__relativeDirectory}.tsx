@@ -16,13 +16,13 @@ const latLongString = (deg: number, lat: boolean) => {
 
   let direction;
   if (lat) {
-      direction = deg >= 0 ? "N" : "S";
+    direction = deg >= 0 ? "N" : "S";
   } else {
-      direction = deg >= 0 ? "E" : "W";
+    direction = deg >= 0 ? "E" : "W";
   }
 
-  return degrees + "° " + minutes + "' " + seconds + "\" " + direction;
-}
+  return degrees + "° " + minutes + "' " + seconds + '" ' + direction;
+};
 
 interface MilesNode {
   node: {
@@ -62,11 +62,10 @@ const Post: React.FC<PostProps> = ({
   },
 }) => {
   const coordinates = JSON.parse(location.coordinates).coordinates;
-  const totalMiles = edges.filter(
-    (e) => e.node.frontmatter.postDate <= rawDate
-  )
-  .map((e) => e.node.frontmatter.postMiles)
-  .reduce((a, b) => a + b, 0);
+  const totalMiles = edges
+    .filter((e) => e.node.frontmatter.postDate <= rawDate)
+    .map((e) => e.node.frontmatter.postMiles)
+    .reduce((a, b) => a + b, 0);
 
   return (
     <Layout>
