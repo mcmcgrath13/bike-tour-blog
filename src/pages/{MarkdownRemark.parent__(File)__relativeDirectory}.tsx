@@ -136,15 +136,6 @@ const Fact = styled.li`
   border-radius: 0.25rem;
 `;
 
-const Header = styled.div`
-  display: grid;
-  grid-template-areas: "title" "subtitle" "map" "facts";
-
-  @media ${QUERIES.tabletAndUp} {
-    grid-template-areas: "title map" "subtitle map" "facts map";
-  }
-`
-
 const LocationMapWrapperMobile = styled.div`
   margin: 0 auto;
   width: fit-content;

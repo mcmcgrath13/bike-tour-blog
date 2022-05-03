@@ -1,5 +1,5 @@
 import React, { useRef, useLayoutEffect } from "react";
-import embed, { VisualizationSpec } from "vega-embed";
+import embed from "vega-embed";
 
 import us10m from "../data/us-10m-topo-simple.json";
 import { COLORS } from "../constants";

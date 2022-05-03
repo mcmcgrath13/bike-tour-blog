@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet";
 
 import Footer from "./Footer";
 import GlobalStyle from "./GlobalStyles";
@@ -16,7 +16,7 @@ const Layout: React.FC<LayoutProps> = ({ children, withHero = false }) => {
   return (
     <>
       <GlobalStyle />
-      
+
       <Helmet>
         <link rel="icon" href="/favicon.ico" />
       </Helmet>

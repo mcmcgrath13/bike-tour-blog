@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
+import { Helmet } from "react-helmet";
 
 import { QUERIES } from "../constants";
 
@@ -15,37 +16,48 @@ const PostImages: React.FC<PostImagesProps> = ({ images }) => {
   const [mainImage, setMainImage] = useState(images[0]);
 
   return (
-    <BackgroundColor>
-      <MaxWidthWrapper>
-        <OuterWrapper>
-          <MainImageWrapper key={mainImage.image.publicURL}>
-            <MainImage
-              alt={mainImage?.caption}
-              src={mainImage.image.publicURL}
-            />
-            <MainImageCaption>{mainImage.caption}</MainImageCaption>
-          </MainImageWrapper>
+    <>
+      <Helmet>
+        {images.map((image) => {
+          const {
+            image: { publicURL, id },
+          } = image;
+          return <link rel="preload" href={publicURL} key={id} />;
+        })}
+      </Helmet>
 
-          <Gallery>
-            {images.map((image) => {
-              const {
-                image: { publicURL, id },
-                caption,
-              } = image;
-              return (
-                <GalleryImage
-                  onClick={() => setMainImage(image)}
-                  key={id}
-                  src={publicURL}
-                  alt={caption}
-                  style={image === mainImage ? activeImageStyles : {}}
-                />
-              );
-            })}
-          </Gallery>
-        </OuterWrapper>
-      </MaxWidthWrapper>
-    </BackgroundColor>
+      <BackgroundColor>
+        <MaxWidthWrapper>
+          <OuterWrapper>
+            <MainImageWrapper key={mainImage.image.publicURL}>
+              <MainImage
+                alt={mainImage?.caption}
+                src={mainImage.image.publicURL}
+              />
+              <MainImageCaption>{mainImage.caption}</MainImageCaption>
+            </MainImageWrapper>
+
+            <Gallery>
+              {images.map((image) => {
+                const {
+                  image: { publicURL, id },
+                  caption,
+                } = image;
+                return (
+                  <GalleryImage
+                    onClick={() => setMainImage(image)}
+                    key={id}
+                    src={publicURL}
+                    alt={caption}
+                    style={image === mainImage ? activeImageStyles : {}}
+                  />
+                );
+              })}
+            </Gallery>
+          </OuterWrapper>
+        </MaxWidthWrapper>
+      </BackgroundColor>
+    </>
   );
 };
 
