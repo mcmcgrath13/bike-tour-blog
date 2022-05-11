@@ -2,6 +2,8 @@ backend:
   name: github
   repo: mcmcgrath13/bike-tour-blog
   branch: main
+  base_url: https://asia-northeast1-mary-bikes.cloudfunctions.net
+  auth_endpoint: /oauth/auth
 
 local_backend: true
 
