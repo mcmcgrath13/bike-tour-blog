@@ -1,10 +1,10 @@
 ---
 images:
-  - image: baec3022-9646-4943-bc30-960ef26130da.jpeg
+  - image: 185a7974-160e-445f-82fa-ee1ad17ea132.jpeg
     caption: "And also cake. "
-  - image: d73d4b21-7a39-4cbb-b8cb-dad132ce0b7c.jpeg
+  - image: f5054dd4-5ae9-41ed-a68f-24fe5fbd92cb.jpeg
     caption: Otto wants a belly rub
-  - image: d8e64970-9bec-4dc1-9c95-259906e6e939.jpeg
+  - image: 9eeeaa83-1e95-4d60-bd92-eeb58ba6041b.jpeg
     caption: Mini sriracha. ✅
   - image: f8f314cb-1ee0-4f17-9d87-4cecb03f4c60.jpeg
     caption: "🗺 "
