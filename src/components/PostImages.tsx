@@ -44,13 +44,15 @@ const PostImages: React.FC<PostImagesProps> = ({ images }) => {
                   caption,
                 } = image;
                 return (
-                  <button key={id} onClick={() => setMainImage(image)}>
-                    <GalleryImage
-                      src={publicURL}
-                      alt={caption}
-                      style={image === mainImage ? activeImageStyles : {}}
-                    />
-                  </button>
+                  <GalleryImage
+                    key={id}
+                    tabIndex={0}
+                    onClick={() => setMainImage(image)}
+                    onKeyDown={(e) => e.key === "Enter" && setMainImage(image)}
+                    src={publicURL}
+                    alt={caption}
+                    style={image === mainImage ? activeImageStyles : {}}
+                  />
                 );
               })}
             </Gallery>
