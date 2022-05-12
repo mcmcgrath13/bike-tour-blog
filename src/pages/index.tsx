@@ -17,7 +17,10 @@ const HomePage: React.FC<HomePageProps> = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
 
   return (
-    <Layout withHero>
+    <Layout
+      withHero
+      description="Mary Bikes cross country from Rhode Island to Washington - summer 2023"
+    >
       <Wrapper>
         {posts.map((n) => (
           <PostCard key={n.node.parent.relativeDirectory} node={n} />

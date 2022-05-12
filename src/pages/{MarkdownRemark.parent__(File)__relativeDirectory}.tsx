@@ -71,7 +71,7 @@ const Post: React.FC<PostProps> = ({
     .reduce((a, b) => a + b, 0);
 
   return (
-    <Layout>
+    <Layout description={title}>
       <PostImages images={images} />
       <Wrapper>
         <LocationMapWrapperTablet>

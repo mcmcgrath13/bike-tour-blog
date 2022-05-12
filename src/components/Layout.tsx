@@ -10,14 +10,21 @@ import heroImage from "../images/cover.jpeg";
 
 interface LayoutProps {
   withHero?: boolean;
+  description: string;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, withHero = false }) => {
+const Layout: React.FC<LayoutProps> = ({
+  children,
+  description,
+  withHero = false,
+}) => {
   return (
     <>
       <GlobalStyle />
 
       <Helmet>
+        <title>Mary Bikes</title>
+        <meta name="description" content={description}></meta>
         <link rel="icon" href="/favicon.ico" />
       </Helmet>
 
