@@ -162,17 +162,36 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
     ],
   } as Spec;
 
+  const getWidth = () => {
+    return el.current?.clientWidth ?? 400;
+  };
+
+  const getHeight = () => {
+    return el.current?.clientHeight ?? 400;
+  };
+
+  const resizeView = (view) => {
+    view.width(getWidth()).height(getHeight()).resize().run();
+  };
+
   useLayoutEffect(() => {
     if (el.current) {
       embed(el.current, spec, {
         mode: "vega",
         actions: false,
       }).then(({ view }) => {
-        view
-          .width(el.current.clientWidth)
-          .height(el.current.clientHeight)
-          .resize()
-          .run();
+        let timeout: number;
+        resizeView(view);
+        window.onresize = () => {
+          // If there's a timer, cancel it
+          if (timeout) {
+            window.clearTimeout(timeout);
+          }
+          timeout = window.setTimeout(() => {
+            // Run our resize functions
+            resizeView(view);
+          }, 100);
+        };
       });
     }
   }, [spec]);
