@@ -202,11 +202,30 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
       description="Mary bikes cross country from Rhode Island to Washington - summer 2023"
     >
       <Wrapper>
+        <Title>Where has Mary been?</Title>
+        <SubTitle>
+          Each point on the map is a location Mary has been on her bike. Click
+          on a point to see the corresponding post.
+        </SubTitle>
+      </Wrapper>
+      <Wrapper>
         <MapWrapper ref={el}></MapWrapper>
       </Wrapper>
     </Layout>
   );
 };
+
+const Title = styled.h1`
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 0rem;
+`;
+
+const SubTitle = styled.p`
+  font-size: 1rem;
+  font-weight: var(--font-weight-normal);
+  margin-bottom: -2rem;
+`;
 
 const MapWrapper = styled.div`
   width: 100%;
@@ -214,7 +233,7 @@ const MapWrapper = styled.div`
 `;
 
 const Wrapper = styled.div`
-  padding: var(--gutter);
+  margin: var(--gutter);
 `;
 
 export const query = graphql`
