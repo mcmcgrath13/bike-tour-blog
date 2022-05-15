@@ -4,7 +4,7 @@ import styled from "styled-components";
 import embed from "vega-embed";
 import { Spec } from "vega";
 
-import us10m from "../data/us-10m-topo.json";
+import us10m from "../data/us-10m-topo-detail.json";
 import { COLORS } from "../constants";
 import Layout from "../components/Layout";
 
