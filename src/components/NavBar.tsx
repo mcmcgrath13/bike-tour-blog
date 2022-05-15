@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 
 import BikeIcon from "../images/bicycle-solid.inline.svg";
+import MapIcon from "../images/map-solid.inline.svg";
 
 const NavBar: React.FC = () => {
   return (
@@ -10,11 +11,18 @@ const NavBar: React.FC = () => {
       <Link to="/">
         <Title>Mary Bikes</Title>
       </Link>
-      <IconWrapper>
-        <Link to="/">
-          <BikeIcon />
-        </Link>
-      </IconWrapper>
+      <Icons>
+        <IconWrapper>
+          <Link to="/">
+            <BikeIcon />
+          </Link>
+        </IconWrapper>
+        <IconWrapper>
+          <Link to="/map">
+            <MapIcon />
+          </Link>
+        </IconWrapper>
+      </Icons>
     </Wrapper>
   );
 };
@@ -38,6 +46,11 @@ const Wrapper = styled.nav`
   & > a {
     text-decoration: none;
   }
+`;
+
+const Icons = styled.div`
+  display: flex;
+  gap: 2rem;
 `;
 
 const Title = styled.h1`

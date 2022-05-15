@@ -140,6 +140,39 @@ a {
 a:hover {
   text-decoration: none;
 }
+
+#vg-tooltip-element.vg-tooltip {
+  display: none;
+  white-space: pre-wrap;
+  color: ${COLORS.gray[900]};
+  font-family: var(--font-family-sans-serif);
+  font-size: 0.8rem;
+}
+
+@media ${QUERIES.tabletAndUp} {
+  #vg-tooltip-element.vg-tooltip {
+    display: revert;
+  }
+}
+
+#vg-tooltip-element.vg-tooltip h2 {
+  margin-bottom: 0.2em;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+#vg-tooltip-element.vg-tooltip table tr td {
+  padding-top: 1px;
+  padding-bottom: 1px;
+
+  &.value {
+    font-weight: bold;
+  }
+}
+
+#vg-tooltip-element.vg-tooltip table tr td.value {
+  font-weight: bold;
+}
 `;
 
 export default GlobalStyles;

@@ -14,8 +14,8 @@ const LocationMap: React.FC<LocationMapProps> = ({ latitude, longitude }) => {
 
   const spec = {
     $schema: "https://vega.github.io/schema/vega-lite/v5.json",
-    width: 200,
-    height: 150,
+    width: 250,
+    height: 185,
     projection: {
       type: "albers",
     },
