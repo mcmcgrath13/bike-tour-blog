@@ -204,8 +204,7 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
       <Wrapper>
         <Title>Where has Mary been?</Title>
         <SubTitle>
-          Each point on the map is a location Mary has been on her bike. Click
-          on a point to see the corresponding post.
+          Each point on the map is a location Mary has been on her bike. Select a point to see the corresponding post.
         </SubTitle>
       </Wrapper>
       <Wrapper>
