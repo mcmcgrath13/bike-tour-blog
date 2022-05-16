@@ -5,6 +5,7 @@ import embed from "vega-embed";
 import { Spec } from "vega";
 
 import us10m from "../data/us-10m-topo-detail.json";
+import coastlines from "../data/on_coast.json";
 import { COLORS } from "../constants";
 import Layout from "../components/Layout";
 
@@ -66,6 +67,14 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
 
     data: [
       {
+        name: 'outlines',
+        values: coastlines,
+        format: {
+          type: "topojson",
+          feature: "-",
+        },
+      },
+      {
         name: "states",
         values: us10m,
         format: {
@@ -96,6 +105,18 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
     ],
 
     marks: [
+      {
+        type: 'shape',
+        from: { data: 'outlines' },
+        encode: {
+          enter: {
+            strokeWidth: { value: 1 },
+            stroke: { value: '#d3d3d3' },
+          },
+        },
+        transform: [{ type: 'geoshape', projection: 'projection' }],
+      },
+
       {
         type: "shape",
         from: { data: "states" },
