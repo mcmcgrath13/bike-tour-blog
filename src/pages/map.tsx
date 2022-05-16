@@ -244,7 +244,7 @@ const Title = styled.h1`
 const SubTitle = styled.p`
   font-size: 1rem;
   font-weight: var(--font-weight-normal);
-  margin-bottom: -2rem;
+  margin-bottom: calc(-1 * var(--gutter) + 0.5rem);
 `;
 
 const MapWrapper = styled.div`
