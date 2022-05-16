@@ -35,7 +35,7 @@ const ErrorPage: React.FC = () => {
 
 const Icons = styled.div`
   display: grid;
-  width: 100%;
+  width: min(100%, 60ch);
   gap: 3rem;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   text-align: center;
