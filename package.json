@@ -47,6 +47,8 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "firebase-tools": "^10.6.0",
+    "ndjson-cli": "^0.3.1",
+    "shapefile": "^0.6.6",
     "topojson-client": "^3.1.0",
     "topojson-server": "^3.0.1",
     "topojson-simplify": "^3.0.3",

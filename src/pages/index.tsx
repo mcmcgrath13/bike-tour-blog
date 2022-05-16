@@ -19,7 +19,7 @@ const HomePage: React.FC<HomePageProps> = ({ data }) => {
   return (
     <Layout
       withHero
-      description="Mary Bikes cross country from Rhode Island to Washington - summer 2023"
+      description="Mary bikes cross country from Rhode Island to Washington - summer 2023"
     >
       <Wrapper>
         {posts.map((n) => (
