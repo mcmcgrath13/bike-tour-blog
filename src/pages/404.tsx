@@ -43,8 +43,8 @@ const Icons = styled.div`
 `;
 
 const Title = styled.h1`
-  color: var(--color-primary);
-  font-size: 4rem;
+  color: var(--color-secondary);
+  font-size: 6rem;
   font-family: var(--font-family-logo);
 `;
 
