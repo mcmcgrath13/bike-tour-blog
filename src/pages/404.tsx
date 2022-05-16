@@ -1,54 +1,79 @@
-import * as React from "react";
+import React from "react";
+import styled from "styled-components";
 import { Link } from "gatsby";
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-};
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-};
+import Layout from "../components/Layout";
 
-const paragraphStyles = {
-  marginBottom: 48,
-};
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-};
+import BikeIcon from "../images/bicycle-solid.inline.svg";
+import MapIcon from "../images/map-solid.inline.svg";
 
-// markup
-const NotFoundPage: React.FC = () => {
+const ErrorPage: React.FC = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
+    <Layout description="Mary bikes cross country from Rhode Island to Washington - summer 2023">
+      <Wrapper>
+        <Title>404</Title>
+        <SubTitle>You&apos;re lost!</SubTitle>
+        <Icons>
+          <Link to="/">
+            <IconWrapper>
+              <BikeIcon />
+            </IconWrapper>
+            <IconText>Go home</IconText>
+          </Link>
+
+          <Link to="/map">
+            <IconWrapper>
+              <MapIcon />
+            </IconWrapper>
+            <IconText>Look at a map</IconText>
+          </Link>
+        </Icons>
+      </Wrapper>
+    </Layout>
   );
 };
 
-export default NotFoundPage;
+const Icons = styled.div`
+  display: grid;
+  width: 100%;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  text-align: center;
+  margin-top: 2rem;
+`;
+
+const Title = styled.h1`
+  color: var(--color-primary);
+  font-size: 4rem;
+  font-family: var(--font-family-logo);
+`;
+
+const SubTitle = styled.p`
+  color: var(--color-primary);
+  font-size: 2rem;
+`;
+
+const IconWrapper = styled.span`
+  display: inline-block;
+  height: 5rem;
+  width: 5rem;
+  color: var(--color-primary);
+`;
+
+const IconText = styled.p`
+  color: var(--color-primary);
+  font-size: 2rem;
+`;
+
+const Wrapper = styled.div`
+  display: grid;
+  gap: 1rem;
+  place-content: center;
+  justify-items: center;
+  grid-template-columns: minmax(200px, 1fr);
+  width: 100%;
+  min-height: 80vh;
+  padding: var(--gutter);
+`;
+
+export default ErrorPage;
