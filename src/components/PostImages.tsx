@@ -152,9 +152,17 @@ const Gallery = styled.div`
   flex-direction: row;
   gap: 0.5rem;
   overflow: auto;
+  --scroll-bar-width: 16px;
+
+  padding-bottom: var(--scroll-bar-width);
+  margin-bottom: calc(-1 * var(--scroll-bar-width));
 
   @media ${QUERIES.laptopAndUp} {
     flex-direction: column;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-right: var(--scroll-bar-width);
+    margin-right: calc(-1 * var(--scroll-bar-width));
   }
 `;
 
