@@ -220,7 +220,7 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
   return (
     <Layout
       withHero
-      description="Mary bikes cross country from Rhode Island to Washington - summer 2023"
+      description="Mary bikes cross country from Rhode Island to Washington - Summer 2022"
     >
       <Wrapper>
         <Title>Where has Mary been?</Title>
