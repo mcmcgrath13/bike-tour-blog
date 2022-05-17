@@ -9,7 +9,7 @@ import MapIcon from "../images/map-solid.inline.svg";
 
 const ErrorPage: React.FC = () => {
   return (
-    <Layout description="Mary bikes cross country from Rhode Island to Washington - summer 2023">
+    <Layout description="Mary bikes cross country from Rhode Island to Washington - Summer 2022">
       <Wrapper>
         <Title>404</Title>
         <SubTitle>You&apos;re lost!</SubTitle>
