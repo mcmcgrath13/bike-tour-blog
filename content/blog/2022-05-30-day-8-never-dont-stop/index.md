@@ -1,16 +1,16 @@
 ---
 images:
-  - image: 464a25e5-6d2d-4642-b75c-c56fb68b3742.jpeg
+  - image: fec04307-173d-485d-9334-e92f6b410908.jpeg
     caption: Riding the carousel at Shelburne Museum
-  - image: d6adab50-480f-4ace-9d27-00b9bdfcff53.jpeg
+  - image: faaa6c7d-7eb6-4ade-8357-a25b7a5fc8c4.jpeg
     caption: Our coffee stop at Vergennes Laundry with scones baked in a brick oven
-  - image: 42bbb194-b493-433f-b3b0-0627a6ba0368.jpeg
+  - image: 2839b57b-246c-42f4-a284-15ca04d5ad99.jpeg
     caption: The coffee stop merged into our lunch stop with delicious Turkish eggs
       and a breakfast panini
-  - image: 963dba83-f7c0-4ade-b9b6-cdd8316c39f4.jpeg
+  - image: 9a57f08d-c894-423b-9831-3d80a1fc034c.jpeg
     caption: We biked by lots of farmland today with mountains framing the view in
       the background
-  - image: 4b5b59e6-c0f5-44f2-8641-e2ae56af4c6c.jpeg
+  - image: 2d39615a-e99b-44be-8ae3-3e897f6bff7b.jpeg
     caption: Arriving at Fernando and Randy’s house in Shelburne
 title: "Day 8: Never Dont Stop"
 date: 2022-05-29
