@@ -12,7 +12,7 @@ images:
       the background
   - image: 4b5b59e6-c0f5-44f2-8641-e2ae56af4c6c.jpeg
     caption: Arriving at Fernando and Randy’s house in Shelburne
-title: "Day 8: Never Don’t Stop"
+title: "Day 8: Never Dont Stop"
 date: 2022-05-29
 location:
   coordinates: '{"type":"Point","coordinates":[-73.227539,44.3801704]}'
