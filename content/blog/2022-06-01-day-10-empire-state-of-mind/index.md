@@ -34,11 +34,11 @@ We boarded the ferry in Charlotte, VT along with four cars.
 
 ## Hello, New York
 
-The ferry dropped us off in Essex NY marking our fifth state of the trip (for real this time+). 
+The ferry dropped us off in Essex NY marking our fifth state of the trip (for real this timeℹ️). 
 
 As expected, the Adirondacks are hilly. We had a lot of ups and downs into towns along the coast of Lake Champlain, then turned inland for our first big up into the mountains. We made it, though I’m not sure I would have without a rest in Ironville and a three course snack of garlic sesame sticks, beef jerked, and sour patch kids. 
 
 Paradox lake is our camp for the night. Very quiet and pretty, but also quite buggy. 
 
 
-+ We had accidentally entered New York a few days earlier for a few miles, but didn’t realize it until VT welcomed us back 
+ℹ️ We had accidentally entered New York a few days earlier for a few miles, but didn’t realize it until VT welcomed us back 
