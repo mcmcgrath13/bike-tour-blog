@@ -5,7 +5,7 @@ images:
   - image: 7878e29b-ebdd-4899-9e30-f294e919fabe.jpeg
     caption: We were sent off well fed this morning by John and Susan
   - image: bf381a89-4dcc-4e3f-8644-2b8fc1898355.jpeg
-    caption: An extra long coffee break this morning in Pittsfield to escape the rain
+    caption: An extra long coffee break this morning in Pittsford to escape the rain
   - image: 23a51340-8959-416a-b4a2-185498382a82.jpeg
     caption: Biking along the Erie Canal. You can see all the tire tracks as the
       crushed limestone is soft from the rain
