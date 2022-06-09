@@ -22,7 +22,7 @@ location:
   town: Tonawanda
 miles: 61
 ---
-Phase one+ complete! 🎉🚴💪
+Phase oneℹ️ complete! 🎉🚴💪
 
 Today, we made it to Tonawanda, NY (just outside Buffalo), marking the end of my mom’s leg of this trip. It’s been really great riding with her the last weeks, and it will be very weird not having her by my side/in my rear view mirror all day. She went over all the mountains and hills with me and only got to enjoy the flatter parts of the country for a couple days. However, now she’s in peak shape to ride with the Sakonnet Cyclists back home and can show off her tan lines at the Art Cafe this weekend.
 
@@ -44,5 +44,4 @@ At the end of the day, just before the canal hits the Niagara River, we turned i
 
 We’ll spend the next couple of days here, and then I’ll head into Canada.
 
-
-+ I think of this trip in four phases. The first is riding to Buffalo with my mom. Next is from here to my friend Martha Grace’s house in WI for a long Fourth of July weekend visit. Third is from  WI to Glacier National Park where I’ll meet up with MJ and bike to the pacific coast for phase four. 
+ℹ️ I think of this trip in four phases. The first is riding to Buffalo with my mom. Next is from here to my friend Martha Grace’s house in WI for a long Fourth of July weekend visit. Third is from  WI to Glacier National Park where I’ll meet up with MJ and bike to the pacific coast for phase four.
