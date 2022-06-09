@@ -15,6 +15,7 @@ interface LocationNode {
       date: string;
       location: Location;
       title: string;
+      miles: number;
     };
     parent: {
       relativeDirectory: string;
@@ -30,12 +31,13 @@ interface MapPageProps {
   };
 }
 
-const MapPage: React.FC<MapPageProps> = ({ data }) => {
-  const pointSize = 30;
-  const pointDiameter = Math.sqrt(pointSize / Math.PI) * 2;
+const clampAngle = (angle) => {
+  return angle < -180 ? angle + 360 : angle > 180 ? angle - 360 : angle;
+};
 
+const MapPage: React.FC<MapPageProps> = ({ data }) => {
   const posts = data.allMarkdownRemark.edges.map((post) => {
-    const { location, title, date } = post.node.frontmatter;
+    const { location, title, date, miles } = post.node.frontmatter;
     const { relativeDirectory } = post.node.parent;
     const { town, state } = location;
     const [longitude, latitude] = JSON.parse(location.coordinates).coordinates;
@@ -48,15 +50,70 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
       state,
       url: `/${relativeDirectory}`,
       offset: 0,
+      offsetAxis: "x",
+      offsetMultiplier: 1,
+      miles,
     };
   });
 
   posts.forEach((post, i) => {
-    post.offset +=
-      posts
+    post.offset += posts
+      .slice(i + 1)
+      .filter((p) => p.town == post.town && p.state == post.state).length;
+
+    // figure out which direction the offset should go in
+    if (post.offset > 0) {
+      const nextPost = posts
         .slice(0, i)
-        .filter((p) => p.town == post.town && p.state == post.state).length *
-      (pointDiameter + 0.5);
+        .reverse()
+        .find((p) => p.town !== post.town || p.state !== post.state);
+      const prevPost = posts
+        .slice(i + 1)
+        .find((p) => p.town !== post.town || p.state !== post.state);
+
+      // don't need to worry about missing previous post given the dataset
+      if (!nextPost) {
+        if (
+          prevPost.latitude - post.latitude <
+          prevPost.longitude - post.longitude
+        ) {
+          post.offsetAxis = "y";
+          if (prevPost.latitude < post.latitue) {
+            post.offsetMultiplier = -1;
+          }
+        }
+      } else {
+        const nextAngle =
+          (Math.atan2(
+            nextPost.latitude - post.latitude,
+            nextPost.longitude - post.longitude
+          ) *
+            180) /
+          Math.PI;
+        const prevAngle =
+          (Math.atan2(
+            prevPost.latitude - post.latitude,
+            prevPost.longitude - post.longitude
+          ) *
+            180) /
+          Math.PI;
+
+        const angleDelta = clampAngle(nextAngle - prevAngle);
+        const avgAngle = clampAngle(prevAngle + angleDelta / 2);
+
+        if (avgAngle >= -135 && avgAngle < -45) {
+          post.offsetAxis = "y";
+          post.offsetMultiplier = -1;
+        } else if (avgAngle >= -45 && avgAngle < 45) {
+          post.offsetAxis = "x";
+          post.offsetMultiplier = -1;
+        } else if (avgAngle >= 45 && avgAngle < 135) {
+          post.offsetAxis = "y";
+        } else {
+          post.offsetAxis = "x";
+        }
+      }
+    }
   });
 
   const el = useRef<HTMLDivElement>(null);
@@ -65,9 +122,24 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
     $schema: "https://vega.github.io/schema/vega/v5.json",
     background: "transparent",
 
+    signals: [
+      {
+        name: "pointWidth",
+        update: "max(3.5, width * .006)",
+      },
+      {
+        name: "pointStroke",
+        update: "max(1, width * .0012)",
+      },
+      {
+        name: "pointSize",
+        update: "pow(pointWidth - pointStroke, 2)",
+      },
+    ],
+
     data: [
       {
-        name: 'outlines',
+        name: "outlines",
         values: coastlines,
         format: {
           type: "topojson",
@@ -106,15 +178,15 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
 
     marks: [
       {
-        type: 'shape',
-        from: { data: 'outlines' },
+        type: "shape",
+        from: { data: "outlines" },
         encode: {
           enter: {
             strokeWidth: { value: 1 },
-            stroke: { value: '#d3d3d3' },
+            stroke: { value: "#d3d3d3" },
           },
         },
-        transform: [{ type: 'geoshape', projection: 'projection' }],
+        transform: [{ type: "geoshape", projection: "projection" }],
       },
 
       {
@@ -136,10 +208,10 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
         encode: {
           enter: {
             stroke: { value: COLORS.gray[700] },
-            strokeWidth: { value: 1 },
             interpolate: { value: "monotone" },
           },
           update: {
+            strokeWidth: { signal: "pointStroke" },
             x: { field: "x" },
             y: { field: "y" },
           },
@@ -151,28 +223,22 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
         from: { data: "posts" },
         encode: {
           enter: {
-            size: { value: pointSize },
-            fill: { value: COLORS.urgent },
+            stroke: { value: COLORS.urgent },
+            fill: {
+              signal: `datum.miles === 0 ? 'transparent' : '${COLORS.urgent}'`,
+            },
           },
           update: {
-            x: { signal: "datum.x + datum.offset" },
-            y: { field: "y" },
-          },
-        },
-      },
-
-      {
-        type: "symbol",
-        from: { data: "posts" },
-        encode: {
-          enter: {
-            size: { value: pointSize * 2.5 },
-            fill: { value: "transparent" },
-            cursor: { value: "pointer" },
-          },
-          update: {
-            x: { signal: "datum.x + datum.offset" },
-            y: { field: "y" },
+            strokeWidth: { signal: "pointStroke" },
+            size: { signal: "pointSize" },
+            x: {
+              signal:
+                "datum.offsetAxis === 'x' ? datum.x + datum.offset * pointWidth * datum.offsetMultiplier : datum.x",
+            },
+            y: {
+              signal:
+                "datum.offsetAxis === 'y' ? datum.y + datum.offset * pointWidth * datum.offsetMultiplier : datum.y",
+            },
             href: { field: "url" },
             tooltip: {
               signal: `{'title': datum.title, 'Date': datum.date, 'Location': datum.town + ', ' + datum.state}`,
@@ -225,7 +291,8 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
       <Wrapper>
         <Title>Where has Mary been?</Title>
         <SubTitle>
-          Each point on the map is a location Mary has been on her bike. Select a point to see the corresponding post.
+          Each point on the map is a location Mary has been on her bike. Select
+          a point to see the corresponding post.
         </SubTitle>
       </Wrapper>
       <Wrapper>
@@ -269,6 +336,7 @@ export const query = graphql`
               state
               town
             }
+            miles
           }
           parent {
             ... on File {
