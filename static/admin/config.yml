@@ -5,10 +5,15 @@ backend:
   base_url: https://asia-northeast1-mary-bikes.cloudfunctions.net
   auth_endpoint: /oauth/auth
 
+# run `npx netlify-cms-proxy-server` from root directory to use local backend
 local_backend: true
 
 media_folder: ''
 public_folder: ''
+
+slug:
+  encoding: 'ascii'
+  clean_accents: true
 
 collections:
   - name: blog
