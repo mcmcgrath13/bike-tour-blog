@@ -31,6 +31,10 @@ interface MapPageProps {
   };
 }
 
+const clampAngle = (angle) => {
+  return angle < -180 ? angle + 360 : angle > 180 ? angle - 360 : angle;
+};
+
 const MapPage: React.FC<MapPageProps> = ({ data }) => {
   const posts = data.allMarkdownRemark.edges.map((post) => {
     const { location, title, date, miles } = post.node.frontmatter;
@@ -46,6 +50,8 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
       state,
       url: `/${relativeDirectory}`,
       offset: 0,
+      offsetAxis: "x",
+      offsetMultiplier: 1,
       miles,
     };
   });
@@ -54,6 +60,60 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
     post.offset += posts
       .slice(i + 1)
       .filter((p) => p.town == post.town && p.state == post.state).length;
+
+    // figure out which direction the offset should go in
+    if (post.offset > 0) {
+      const nextPost = posts
+        .slice(0, i)
+        .reverse()
+        .find((p) => p.town !== post.town || p.state !== post.state);
+      const prevPost = posts
+        .slice(i + 1)
+        .find((p) => p.town !== post.town || p.state !== post.state);
+
+      // don't need to worry about missing previous post given the dataset
+      if (!nextPost) {
+        if (
+          prevPost.latitude - post.latitude <
+          prevPost.longitude - post.longitude
+        ) {
+          post.offsetAxis = "y";
+          if (prevPost.latitude < post.latitue) {
+            post.offsetMultiplier = -1;
+          }
+        }
+      } else {
+        const nextAngle =
+          (Math.atan2(
+            nextPost.latitude - post.latitude,
+            nextPost.longitude - post.longitude
+          ) *
+            180) /
+          Math.PI;
+        const prevAngle =
+          (Math.atan2(
+            prevPost.latitude - post.latitude,
+            prevPost.longitude - post.longitude
+          ) *
+            180) /
+          Math.PI;
+
+        const angleDelta = clampAngle(nextAngle - prevAngle);
+        const avgAngle = clampAngle(prevAngle + angleDelta / 2);
+
+        if (avgAngle >= -135 && avgAngle < -45) {
+          post.offsetAxis = "y";
+          post.offsetMultiplier = -1;
+        } else if (avgAngle >= -45 && avgAngle < 45) {
+          post.offsetAxis = "x";
+          post.offsetMultiplier = -1;
+        } else if (avgAngle >= 45 && avgAngle < 135) {
+          post.offsetAxis = "y";
+        } else {
+          post.offsetAxis = "x";
+        }
+      }
+    }
   });
 
   const el = useRef<HTMLDivElement>(null);
@@ -171,8 +231,14 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
           update: {
             strokeWidth: { signal: "pointStroke" },
             size: { signal: "pointSize" },
-            x: { signal: "datum.x + datum.offset * pointWidth" },
-            y: { field: "y" },
+            x: {
+              signal:
+                "datum.offsetAxis === 'x' ? datum.x + datum.offset * pointWidth * datum.offsetMultiplier : datum.x",
+            },
+            y: {
+              signal:
+                "datum.offsetAxis === 'y' ? datum.y + datum.offset * pointWidth * datum.offsetMultiplier : datum.y",
+            },
             href: { field: "url" },
             tooltip: {
               signal: `{'title': datum.title, 'Date': datum.date, 'Location': datum.town + ', ' + datum.state}`,
@@ -199,7 +265,7 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
     if (el.current) {
       embed(el.current, spec, {
         mode: "vega",
-        actions: true,
+        actions: false,
       }).then(({ view }) => {
         let timeout: number;
         resizeView(view);
