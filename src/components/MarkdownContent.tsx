@@ -57,6 +57,11 @@ const Wrapper = styled.div`
     margin-bottom: 1rem;
   }
 
+  & li > ul,
+  li > ol {
+    margin-bottom: 0rem;
+  }
+
   & ul {
     list-style-type: "- ";
   }
