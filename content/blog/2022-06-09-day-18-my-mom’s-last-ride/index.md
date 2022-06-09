@@ -42,4 +42,7 @@ From Lockport on, we were on a fun paved bike path that was a bit more windy and
 
 At the end of the day, just before the canal hits the Niagara River, we turned inland towards family. My dad grew up in the area, and my Aunt Joannie and Uncle Gary live here still. My dad drove up with Otto (the dog) earlier today and they were all sitting on the porch to greet us as we rolled up to the house. Otto was especially excited, running up to us on our bikes to get lots of pets and say hello. 
 
-We’ll spend the next couple of days here, and then I’ll head into Canada. 
+We’ll spend the next couple of days here, and then I’ll head into Canada.
+
+
++ I think of this trip in four phases. The first is riding to Buffalo with my mom. Next is from here to my friend Martha Grace’s house in WI for a long Fourth of July weekend visit. Third is from  WI to Glacier National Park where I’ll meet up with MJ and bike to the pacific coast for phase four. 
