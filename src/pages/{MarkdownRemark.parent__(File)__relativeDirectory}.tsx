@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import styled from "styled-components";
 
 import { QUERIES } from "../constants";
@@ -36,6 +36,18 @@ interface MilesNode {
   };
 }
 
+interface DirectoryNode {
+  next: {
+    base: string | null;
+  };
+  node: {
+    base: string;
+  };
+  previous: {
+    base: string | null;
+  };
+}
+
 interface PostProps {
   data: {
     markdownRemark: {
@@ -48,6 +60,12 @@ interface PostProps {
         miles: number;
       };
       html: string;
+      parent: {
+        relativeDirectory: string;
+      };
+    };
+    allDirectory: {
+      edges: DirectoryNode[];
     };
     allMarkdownRemark: {
       edges: MilesNode[];
@@ -59,16 +77,25 @@ const Post: React.FC<PostProps> = ({
   data: {
     markdownRemark: {
       frontmatter: { date, rawDate, location, title, images, miles },
+      parent: { relativeDirectory },
       html,
     },
+    allDirectory,
     allMarkdownRemark: { edges },
   },
 }) => {
+  console.log(allDirectory);
   const coordinates = JSON.parse(location.coordinates).coordinates;
   const totalMiles = edges
     .filter((e) => e.node.frontmatter.postDate <= rawDate)
     .map((e) => e.node.frontmatter.postMiles)
     .reduce((a, b) => a + b, 0);
+
+  const directoryInfo = allDirectory.edges.find(
+    (d) => d.node.base === relativeDirectory
+  );
+  const nextPage = directoryInfo?.next?.base;
+  const prevPage = directoryInfo?.previous?.base;
 
   return (
     <Layout description={title}>
@@ -105,6 +132,17 @@ const Post: React.FC<PostProps> = ({
           </Fact>
         </Facts>
         <MarkdownContent html={html} />
+        <Divider />
+        <PageLinks>
+          <LinkWrapper>
+            {prevPage && prevPage !== "blog" && (
+              <Link to={"/" + prevPage}>Previous</Link>
+            )}
+          </LinkWrapper>
+          <LinkWrapper>
+            {nextPage && <Link to={"/" + nextPage}>Next</Link>}
+          </LinkWrapper>
+        </PageLinks>
       </Wrapper>
     </Layout>
   );
@@ -159,6 +197,18 @@ const LocationMapWrapperTablet = styled.div`
   }
 `;
 
+const Divider = styled.hr`
+  margin-top: 2rem;
+`;
+const PageLinks = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+`;
+const LinkWrapper = styled.div`
+  font-weight: var(--font-weight-medium);
+`;
+
 const Wrapper = styled.article`
   padding: var(--gutter);
   max-width: calc(60ch + var(--gutter));
@@ -192,6 +242,19 @@ export const query = graphql`
         miles
       }
       html
+    }
+    allDirectory {
+      edges {
+        next {
+          base
+        }
+        node {
+          base
+        }
+        previous {
+          base
+        }
+      }
     }
     allMarkdownRemark {
       edges {
