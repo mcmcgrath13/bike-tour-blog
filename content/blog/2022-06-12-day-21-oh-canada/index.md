@@ -3,6 +3,15 @@ images:
   - image: 81a617c7-1424-4fcb-8923-d2b871e75490.jpeg
     caption: Niagara Falls - I’m on the other side now. Photo credit to my mom as I
       failed to get a good photo from the Canadian side
+  - image: c218f212-42be-41d2-9dd1-8b83623cbd1f.jpeg
+    caption: Otto graciously shared the back seat with me as I hitched a ride to
+      Niagara Falls
+  - image: f583423e-37e0-43dc-9068-ca17f387947b.jpeg
+    caption: Breakfast with Kevin!
+  - image: cd7844a7-13d8-450d-846b-e7fdbce850d6.jpeg
+    caption: Thiago and I riding off down Niagara Parkway
+  - image: 09b6329f-bac1-45df-8cc4-73ab170fb6bf.jpeg
+    caption: Dinner at A&W before heading to the campground
 title: "Day 21: Oh, Canada"
 date: 2022-06-11
 location:
