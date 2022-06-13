@@ -2,12 +2,20 @@
 images:
   - image: 265f38fa-7793-492d-9e86-fc493afcd466.jpeg
     caption: Riding in the rain 🌧
+  - image: ae4d3f62-a35b-45ec-9a79-6c5c5818591e.jpeg
+    caption: Goodbye, Thiago 👋
+  - image: 1f5fc296-e014-4269-a664-c5598e71f377.jpeg
+    caption: Lots of farmland and wind turbines today
+  - image: 769dd218-65a2-4b4f-85cb-51274d13ef79.jpeg
+    caption: There are elk at the campground tonight!
+  - image: 3aac2694-12e0-41ee-b71e-a47f47b05af9.jpeg
+    caption: Home for the night - I have the whole area to myself
 title: "Day 22: All by Myself"
 date: 2022-06-12
 location:
   coordinates: '{"type":"Point","coordinates":[-80.607152,42.585301]}'
   state: ON
-  town: Port Burwell
+  town: Houghton Centre
 miles: 72
 ---
 I bid farewell to Thiago early this morning and am now riding solo. Given this, expect fewer photos of me and more landscapes/things. 
