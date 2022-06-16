@@ -22,4 +22,4 @@ I took full advantage of the buffet breakfast (though no waffle maker 🙁): scr
 
 Main activities for the day were watching First Lady, listening to podcasts, catching up on the crossword, writing post cards, fixing a bike tube, and making some plans for the coming week. 
 
-From my consulting days, I still have a pile of Marriott points, which I’ll be taking advantage of the next few days as there are reasonably priced (pointed?) properties near the route and at good stopping points. I’ll be living the inn-to-inn bike touring lifestyle for a few days - how fancy! Then back to camping. 
+From my consulting days, I still have a pile of Marriott points, which I’ll be taking advantage of the next few days as there are reasonably priced (pointed?) properties near the route and at good stopping points. I’ll be living the inn-to-inn bike touring lifestyle for a few days - how fancy! Then back to camping 🏕. 
