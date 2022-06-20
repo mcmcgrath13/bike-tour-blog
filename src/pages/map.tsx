@@ -167,7 +167,7 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
       },
       {
         name: "linePosts",
-        from: "posts",
+        source: "posts",
         transform: [
           {
             type: "filter",
