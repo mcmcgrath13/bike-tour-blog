@@ -165,6 +165,16 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
           },
         ],
       },
+      {
+        name: "linePosts",
+        source: "posts",
+        transform: [
+          {
+            type: "filter",
+            expr: "datum.offset === 0",
+          },
+        ],
+      },
     ],
 
     projections: [
@@ -204,7 +214,7 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
 
       {
         type: "line",
-        from: { data: "posts" },
+        from: { data: "linePosts" },
         encode: {
           enter: {
             stroke: { value: COLORS.gray[700] },
