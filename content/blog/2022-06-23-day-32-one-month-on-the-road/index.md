@@ -14,7 +14,7 @@ location:
   town: Traverse City
 miles: 0
 ---
-A month ago today, I dipped my rear tire in the Atlantic and hit the road. It feels like both yesterday and a million years ago. I’ve been collecting a few stats on the trip, so here’s the one month update:
+One month ago today, I dipped my rear tire in the Atlantic and hit the road. It feels like both yesterday and a million years ago. I’ve been collecting a few stats on the trip, so here’s the one month update:
 
 - Miles biked: 1494
 - Flat tires: 6ish (there was a bad patch job in there that I’m not sure how to count)
