@@ -32,6 +32,6 @@ Places I stopped:
 
 As you can see, I averaged about five miles between stops. It was one of those days.
 
-However, I made it to Dan and Karin’s house in Escanaba! They are friends of Ann and Cindy from Traverse City and are kindly hosting me tonight and tomorrow. They fed me a delicious dinner and dessert (Happy Birthday Karin 🥳), we spent some time looking at maps (a touring cyclists main pastime), and I enjoyed sitting in their front room overlooking a park right on the lake. I’m definitely going to enjoy a cup of coffee there tomorrow morning. 
+However, I made it to Dan and Karin’s house in Escanaba! They are friends of Ann and Cindy from Traverse City and are kindly hosting me tonight and tomorrow. They fed me a delicious dinner and dessert (Happy Birthday Karin 🥳), we spent some time looking at maps (a touring cyclist’s main pastime), and I enjoyed sitting in their front room overlooking a park right on the lake. I’m definitely going to enjoy a cup of coffee there tomorrow morning. 
 
 ℹ️ Both cyclists were doing a loop of Lake Michigan, one from Chicago and the other from Milwaukee. However, very different touring styles: one was going about 60 miles a day from inn to inn and the other was going about 150 miles a day and camping. 
