@@ -28,7 +28,7 @@ I had breakfast with Bill and Michelle this morning in a foggy campground, then 
 
 This morning started with a big hill out of Crystal Falls. I saw it looming in the distance when I turned into the campground last night, so I knew it was coming. It wasn’t as bad as I expected, which was a pleasant surprise. It was far from the only hill today - there were lots of rollers and climbers throughout the day. 
 
-I really didn’t expect to find a coffee stop this morning based on what I knew of the towns ahead. I was pleasantly surprised when I stumble on the Village Lighthouse in Alpha. I wandered in and everyone was in kind of a circle chatting and I thought I was intruding on event, but aparrenyly everyone was just catching up and this is the local gathering spot. I grabbed a coffee and a slice of strawberry coffee cake (so good!) and joined the circle. 
+I really didn’t expect to find a coffee stop this morning based on what I knew of the towns ahead. I was pleasantly surprised when I stumble on the Village Lighthouse in Alpha. I wandered in and everyone was in kind of a circle chatting and I thought I was intruding in on an event, but aparrenyly everyone was just catching up and this is the local gathering spot. I grabbed a coffee and a slice of strawberry coffee cake (so good!) and joined the circle. 
 
 Later on in Caspian, I restocked on postcard stamps and got my last Michigan post cards postmarked in Michigan, which is very important. 
 
