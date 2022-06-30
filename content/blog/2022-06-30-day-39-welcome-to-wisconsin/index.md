@@ -24,7 +24,7 @@ Seven states down, seven-ish to go!
 
 ## A Roller Coaster Day
 
-I had breakfast with Bill and Michelle this morning in a foggy campground, then we parted ways. Then headed east and me continuing on west. 
+I had breakfast with Bill and Michelle this morning in a foggy campground, then we parted ways. Them headed east and me continuing on west. 
 
 This morning started with a big hill out of Crystal Falls. I saw it looming in the distance when I turned into the campground last night, so I knew it was coming. It wasn’t as bad as I expected, which was a pleasant surprise. It was far from the only hill today - there were lots of rollers and climbers throughout the day. 
 
