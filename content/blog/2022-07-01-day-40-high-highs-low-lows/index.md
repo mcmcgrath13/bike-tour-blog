@@ -38,7 +38,7 @@ High: Dan, my warm showers host tonight, got my message asking about availabilit
 
 Low: Walking back to the road and along the county highway trying to hitchhike west so Dan wouldn’t have to drive so far. 
 
-High: A couple of the guys who maintain the bike path were trailering a bunch of bikes to the bike path benefactors house and picked me up. Apparently the head of Uline has a lot of property in the area and has bought/donated a bunch of land for bike paths and parks that are all maintained like golf courses. They dropped me off at Rest Lake Park, which had the Taj Mahal of picnic pavilions. Cushioned teak furniture, a fireplace, but flowers, Adirondack chairs, a giant skylight, clean as can be bathrooms with running water. Wild. 
+High: A couple of the guys who maintain the bike path were trailering a bunch of bikes to the bike path benefactors house and picked me up. Apparently the head of Uline has a lot of property in the area and has bought/donated a bunch of land for bike paths and parks that are all maintained like golf courses. They dropped me off at Rest Lake Park, which had the Taj Mahal of picnic pavilions. Cushioned teak furniture, a fireplace, cut flowers, Adirondack chairs, a giant skylight, clean as can be bathrooms with running water. Wild. 
 
 High: Dan rescued me and we were off to Bay City Cycles in Ashland! We chatted about bike touring and the world and dairy farming on the drive (Dan is a retired dairy farmer). I took him out to lunch as a thank you while they fixed my bike. 
 
