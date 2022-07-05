@@ -52,6 +52,7 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
       offset: 0,
       offsetAxis: "x",
       offsetMultiplier: 1,
+      skipLine: false,
       miles,
     };
   });
@@ -83,6 +84,10 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
           }
         }
       } else {
+        if (prevPost.town === post.town && prevPost.state === post.state) {
+          post.skipLine = true;
+        }
+
         const nextAngle =
           (Math.atan2(
             nextPost.latitude - post.latitude,
@@ -171,7 +176,7 @@ const MapPage: React.FC<MapPageProps> = ({ data }) => {
         transform: [
           {
             type: "filter",
-            expr: "datum.offset === 0",
+            expr: "!datum.skipLine",
           },
         ],
       },
