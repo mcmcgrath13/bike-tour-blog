@@ -7,7 +7,7 @@ images:
       instead "
   - image: 2cea2ed2-c93e-438b-b7f7-e227e4ec7e3c.jpeg
     caption: Lasagna ready to eat!
-title: "Day 44: America"
+title: "Day 44: 🇺🇸"
 date: 2022-07-04
 location:
   coordinates: '{"type":"Point","coordinates":[-91.4754766,46.0189763]}'
