@@ -23,9 +23,9 @@ I crossed the Mississippi River!! Though I think I cross back tomorrow…
 
 After missing out on s’mores last night, I woke up this morning craving one so I made one to go with my morning coffee. I had some more non-s’more breakfast after so I’d be well fueled for the day. 
 
-Bruce gave me a ride back to Milaca and told me all about the area and the local history and cities and economies along the way. As we neared Milaca we saw a lot of detour signs for the road I was supposed to be riding, so Bruce dropped me off one town further west where I got off that road. Detours designed for cars can be treacherous or too long for a bicyclist, so I was happy to have Bryce’s help in avoiding one. 
+Bryce gave me a ride back to Milaca and told me all about the area and the local history and cities and economies along the way. As we neared Milaca we saw a lot of detour signs for the road I was supposed to be riding, so Bruce dropped me off one town further west where I got off that road. Detours designed for cars can be treacherous or too long for a bicyclist, so I was happy to have Bryce’s help in avoiding one. 
 
-The winds were strong today, but I was stronger. 20mph headwinds would have been killer a month ago, and still weren’t easy riding today, but definitely conquer-able and mostly above 10mph. I was biking through lots of farmland today, so the bowed cornstalks were good proof of the wind speeds. 
+The winds were strong today, but I was stronger. 20mph headwinds would have been killer a month ago, and still weren’t easy riding today, but definitely conquer-able and mostly above a 10mph crusing speed. I was biking through lots of farmland today, so the bowed cornstalks were good proof of the wind speeds. 
 
 I stopped at a convenience store to find chocolate milk midday and it turned out it was also a pub. They had chocolate milk and cheesey garlic bread on the menu, so I was sold. Talking with the folks there, it sounds like quite a few cyclists stop through there. While there, an older couple doing a hybrid road/bike trip along the northern tier stopped in and we chatted for a bit. 
 
