@@ -20,7 +20,7 @@ As I entered Brainerd today, there was a photo op at the visitor center with a P
 
 I had an easy morning in my tent, but as soon as I left it I had to rush as the mosquitoes were on me right away. I got up, lounged, then out as soon as possible. 
 
-In headed a little off route to go into town (river crossing #1 and back #2) as I saw a coffee roaster on google maps. I arrived to Reality Roasters Coffee Co and the woman working asked if I was looking for coffee to drink. I said I was. She replied that she couldn’t sell me coffee, but she could give me brewed coffee for free and I happily accepted. Business rules are weird sometimes. I ended up staying and chatting with her for almost an hour while sipping a very delicious cup of coffee. She sent me off with a full to go mug to boot. 
+I headed a little off route to go into town (river crossing #1 and back #2) as I saw a coffee roaster on google maps. I arrived to Reality Roasters Coffee Co and the woman working asked if I was looking for coffee to drink. I said I was. She replied that she couldn’t sell me coffee, but she could give me brewed coffee for free and I happily accepted. Business rules are weird sometimes. I ended up staying and chatting with her for almost an hour while sipping a very delicious cup of coffee. She sent me off with a full to go mug to boot. 
 
 I then continued north along quiet roads to the west of the Mississippi. At Camp Ripley, an army outpost, I had to cross back to the east side of the Mississippi (crossing #3) and rode on and off of highway 371 until Brainerd. 
 
