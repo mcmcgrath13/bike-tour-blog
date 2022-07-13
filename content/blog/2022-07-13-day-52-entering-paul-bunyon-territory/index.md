@@ -24,7 +24,7 @@ I headed a little off route to go into town (river crossing #1 and back #2) as I
 
 I then continued north along quiet roads to the west of the Mississippi. At Camp Ripley, an army outpost, I had to cross back to the east side of the Mississippi (crossing #3) and rode on and off of highway 371 until Brainerd. 
 
-There was a visitor center right on the highway that toted a gift shop, photo op with Paul Bunyon, and bathrooms, so I decided to check it out. As I was reading some of the displays about Minnesota and the region, several people approach me asking about my trip, noting they’d passed me on the road in. 
+There was a visitor center right on the highway that toted a gift shop, photo op with Paul Bunyon, and bathrooms, so I decided to check it out. As I was reading some of the displays about Minnesota and the region, several people approached me asking about my trip, noting they’d passed me on the road in. 
 
 From the visitor center, I turned into a state park and got on the Paul Bunyon State Trail. The path was pretty quiet and wound its way along the Mississippi north. The route was a little turny through/around Brainerd and I ended up crossing the Mississipi for the fourth time of the day. After that, the path took me north through woods and by lakes. 
 
