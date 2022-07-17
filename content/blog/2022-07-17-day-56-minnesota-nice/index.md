@@ -33,3 +33,5 @@ As I biked on, I saw a big grey mass looming on the horizon. Getting closer, I c
 Some miles further on, I came to the edge of the Red River Valley. The valley used to be a huge glacial lake, so the edge was the banks of that lake. From the top of the banks you can see forever. I descended slowly down for a few miles into the valley and then the road was pancake flat through farmland until I crossed the Red River into Fargo. I rode through cute residential neighborhoods and blocks with shops as I wound through the city to the hotel. The landscape became more industrial and big box as I went on, but I look forward to going back to downtown tomorrow. 
 
 Noel met me at the hotel and after a bit of rest and showers, we went out to dinner at a ramen/poke place a couple miles away. When you have a car, you can go anywhere for dinner! Not just the places in the immediate vicinity. So fancy. We hung out watching the new season of The Umbrella Academy after dinner and will explore Fargo some more tomorrow. 
+
+P.S. Nine states down! Five-ish to go. North Dakota is the first state I’ve biked into that I haven’t been to ever. It’s the 32nd state I’ve visited in my life. 
