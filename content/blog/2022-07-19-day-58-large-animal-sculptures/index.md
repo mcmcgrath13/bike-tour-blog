@@ -20,7 +20,7 @@ Giant animal sculptures seem to be a thing in this part of the world. We visited
 
 ## Road Tripping
 
-This morning, Bubba got packed into the back of the car and we headed downtown for breakfast. We found breakfast burritos at a taco shop and then went next door for coffee. There’s a nice plaza in town with tables and chairs by a green which we ate it. It wasn’t yet hot out. 
+This morning, Bubba got packed into the back of the car and we headed downtown for breakfast. We found breakfast burritos at a taco shop and then went next door for coffee. There’s a nice plaza in town with tables and chairs by a green which we ate at. It wasn’t yet hot out. 
 
 The Plains Museum opened at eleven and we got there a few minutes after. There were a few exhibits open along with a local watercolor contest along the hallways. I particularly enjoyed the exhibit exploring light and color in different media. 
 
