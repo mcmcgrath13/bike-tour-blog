@@ -6,6 +6,8 @@ images:
     caption: Entering Montana!
   - image: 3c13495c-e9e1-4b08-bcae-9e5bafdf5d8d.jpeg
     caption: The triceratops skull at Makoshika State Park
+  - image: f737a83b-ac52-477b-8bfa-72ab2a38c4b7.jpeg
+    caption: Some cool rock formations in the canyon
 title: "Day 60: Where the Buffalo Roam"
 date: 2022-07-20
 location:
