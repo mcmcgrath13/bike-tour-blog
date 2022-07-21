@@ -12,7 +12,7 @@ images:
     caption: Part of the petrified forest. You can see the petrified tree stumps
       scattered along the landscape
 title: "Day 59: Teddy Roosevelt’s Park"
-date: 2022-07-20
+date: 2022-07-19
 location:
   coordinates: '{"type":"Point","coordinates":[-103.5250944,46.912463]}'
   state: ND
