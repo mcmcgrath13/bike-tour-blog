@@ -4,6 +4,8 @@ images:
     caption: A herd of bison with some young calves
   - image: db703e45-1e03-475b-92ec-e3892b773f1d.jpeg
     caption: Entering Montana!
+  - image: 3c13495c-e9e1-4b08-bcae-9e5bafdf5d8d.jpeg
+    caption: The triceratops skull at Makoshika State Park
 title: "Day 60: Where the Buffalo Roam"
 date: 2022-07-20
 location:
