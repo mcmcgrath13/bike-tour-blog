@@ -2,6 +2,8 @@
 images:
   - image: a81d3342-6916-41a4-b4cb-9a75c74c4cd6.jpeg
     caption: A herd of bison with some young calves
+  - image: db703e45-1e03-475b-92ec-e3892b773f1d.jpeg
+    caption: Entering Montana!
 title: "Day 60: Where the Buffalo Roam"
 date: 2022-07-20
 location:
