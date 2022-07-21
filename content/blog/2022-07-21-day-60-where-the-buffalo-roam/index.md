@@ -8,6 +8,8 @@ images:
     caption: The triceratops skull at Makoshika State Park
   - image: f737a83b-ac52-477b-8bfa-72ab2a38c4b7.jpeg
     caption: Some cool rock formations in the canyon
+  - image: f9b74443-faa6-4864-a404-d9cc2c813356.jpeg
+    caption: Trivia champions!
 title: "Day 60: Where the Buffalo Roam"
 date: 2022-07-20
 location:
