@@ -25,7 +25,7 @@ Today marks two months of bike touring (and also my brother’s birthday - happy
 - Flat tires: 6ish (there was a bad patch job in there that I’m not sure how to count) (+0)
 - Jars of peanut butter eaten: 6 (+3)
 - States crossed: 10 (+4)
-- Books read: 6 (+0, but I’m close to finishing a long one)
+- Books read: 7 (+1, but I’m close to finishing a long one)
 - Post cards written: 36 (+18)
 - Nights stayed:
   - Friends/Family: 25 (+12)
