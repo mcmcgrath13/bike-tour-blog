@@ -18,7 +18,9 @@ location:
   town: Stanford
 miles: 50
 ---
-I rolled into Stanford at the end of today feeling pretty weary after fighting headwinds and not sure where I was going to sleep. I went to the library (newest, biggest library I’ve seen in ages) and the librarian, Jeannie, not only finds me a place to stay at a local RV park, but gets me an ice cream sandwich and a cup of tea! Librarians are the best. She also gave me the hot tip that I could go next door to the courthouse and check out the great views and ride the _only_ elevator in the county. So I did. 
+I rolled into Stanford at the end of today feeling pretty weary after fighting headwinds and not sure where I was going to sleep. I went to the library (newest, biggest library I’ve seen in ages) and the librarian, Jeannie, not only finds me a place to stay at a local RV park, but gets me an ice cream sandwich and a cup of tea! Librarians are the best. She also gave me the hot tip that I could go next door to the courthouse and check out the great views and ride the _only_ elevator in the county. So I did.
+
+## Back to Headwinds 
 
 I decamped from Aaron’s this morning and headed to a coffee shop in town. It’s been a long time since I had a morning coffee stop. I sipped and iced latte, did the crossword, and chatted with the owners about their upcoming trip to Ireland. 
 
