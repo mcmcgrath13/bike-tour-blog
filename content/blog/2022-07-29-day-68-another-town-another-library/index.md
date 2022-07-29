@@ -14,7 +14,7 @@ location:
   coordinates: '{"type":"Point","coordinates":[-111.9439142,48.1736118]}'
   state: MT
   town: Conrad
-miles: 60
+miles: 63
 ---
 It continues to be rather hot in the afternoons, so after arriving to Conrad and settling into the RV park, I headed to the city museum for a whirlwind tour before it closed, then on to the library to read in the cool quiet. This library is in an old brick building and has huge windows overlooking the street. I settled into a soft leather couch bookended by big plants and read for a couple hours while I charged my phone and waited for the heat to break. 
 
