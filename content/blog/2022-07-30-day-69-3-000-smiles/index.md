@@ -9,6 +9,8 @@ images:
     caption: "If you look really carefully, you can see the Rockies on the horizon "
   - image: 5a1f3c1d-9ef4-43c0-ba19-a97dfbd89391.jpeg
     caption: Rockies getting closer, storm clouds also getting closer
+  - image: 63306c08-c8e2-47c1-960b-b91e60268742.jpeg
+    caption: Sunset after the storm
 title: "Day 69: 3,000 Smiles"
 date: 2022-07-29
 location:
