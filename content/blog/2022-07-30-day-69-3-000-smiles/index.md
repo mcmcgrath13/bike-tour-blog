@@ -23,7 +23,7 @@ I’ve made a solid dent in my cross country journey - over 3,000 miles. About a
 
 ## The Edge
 
-Today I biked along the edge of the edge of the plains and the edge of a thunder storm. Tomorrow I head into the mountains and leave the plains (and hopefully no storms 🤞). 
+Today I biked along the edge of the plains and the edge of a thunder storm. Tomorrow I head into the mountains and leave the plains (and hopefully no storms 🤞). 
 
 I got up on the earlier side as I wanted to check out a coffee shop I’d seen yesterday and still get most of my miles done before it got hot. I got a latte and a cinnamon roll fresh from the oven. There were great arm chairs to lounge in and lots of plants. I could have happily sat there all day, but knew I’d regret not biking in the cooler part of the day, so I moved. Eventually. 
 
