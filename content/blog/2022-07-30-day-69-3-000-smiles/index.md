@@ -17,7 +17,7 @@ location:
   coordinates: '{"type":"Point","coordinates":[-112.3385451,48.6396144]}'
   state: MT
   town: Cut Bank
-miles: 53
+miles: 54
 ---
 I’ve made a solid dent in my cross country journey - over 3,000 miles. About a thousand more to go before the ocean! If I were biking across the south (which I am very happily not in this summer heat), I’d have finished a couple hundred miles ago. 
 
