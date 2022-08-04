@@ -11,7 +11,7 @@ images:
   - image: 0a217353-e8a5-49e4-952b-a7452ca9eb89.jpeg
     caption: St Mary Falls
 title: "Day 72: Chasing Waterfalls"
-date: 2022-08-02
+date: 2022-08-01
 location:
   state: MT
   town: Glacier National Park, East Side
