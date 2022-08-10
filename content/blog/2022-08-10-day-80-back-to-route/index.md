@@ -2,6 +2,8 @@
 images:
   - image: 9e6c4977-615a-4faa-9c1c-f9308d7ce07d.jpeg
     caption: "Getting ready to get on the road "
+  - image: ed601800-b42d-4eb5-85af-0217b93d2787.jpeg
+    caption: Rob, me, and Pam in front of their house
   - image: d113bd1b-f412-4cb5-8010-ebc598ff6bb2.jpeg
     caption: Pizza dinner at Moose’s with Claire, Katherine, Tony, and MJ
 title: "Day 80: Back to Route"
