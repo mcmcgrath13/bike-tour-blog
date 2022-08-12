@@ -11,7 +11,7 @@ images:
   - image: de5ff52b-17ca-4677-9a8c-efd80121747b.jpeg
     caption: Home for the night right on the lake
 title: "Day 82: West Side, Best Side"
-date: 2022-08-12
+date: 2022-08-11
 location:
   town: Kootenai National Forest
   state: MT
