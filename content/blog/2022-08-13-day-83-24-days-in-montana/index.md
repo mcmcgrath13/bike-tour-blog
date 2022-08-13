@@ -6,8 +6,8 @@ images:
     caption: Coffee and biscuits and gravy at a coffee/carpet shop
   - image: 570f6230-87a8-4c72-bea2-8aa07194be6d.jpeg
     caption: Kootenai Falls
-  - image: 177bec19-211a-4cf6-a6f3-f81ff2675d34.jpeg
-    caption: The suspension bridge over Koocanusa River
+  - image: 55c45a5d-9fde-4c29-8906-990f208fb09a.jpeg
+    caption: Wobbling over the suspension bridge over Koocanusa River
   - image: 07332e60-f293-4d3b-b03e-8672124861ab.jpeg
     caption: Kris’s very friendly cat who we don’t know the name of so have dubbed Herb
   - image: 744a6464-0d6b-4353-ae1f-f05797ed40b3.jpeg
