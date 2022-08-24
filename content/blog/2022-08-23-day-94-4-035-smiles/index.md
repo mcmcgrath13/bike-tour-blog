@@ -4,6 +4,8 @@ images:
     caption: Dipping the front tire in the Pacific
   - image: a39f3dab-ed64-470d-b1e4-d5808d2f9847.jpeg
     caption: Obligatory bike over head photo (and outtakes)
+  - image: d91d2eb3-90be-497f-ae96-5276cda14b71.jpeg
+    caption: "MJ: champion of the mountains 🚵‍♀️"
   - image: 9f0968a5-59d5-4b1e-ae2a-788368bc60be.jpeg
     caption: We found the ocean!
   - image: de6499e5-45d2-4e62-8c49-672aefbeaeae.jpeg
