@@ -26,7 +26,7 @@ miles: 0
 ---
 I am currently sitting in the Denver Airport waiting for a flight to finally go home. My time in Colorado got great extended due to Covid and I had to nix the rest of the journey home. 
 
-\## The Good
+## The Good
 
 My train arrived into Denver a couple hours late, but I think that’s par for the course for the really long trains. Overall the journey was excellent with great views and great food (especially the desserts). From the train, I biked over to Nathan’s apartment to drop off my bike and a bag as I wouldn’t need it during this leg of the journey. We said a quick hello and then Caitlin picked me up from there and we headed north to Fort Collins. 
 
@@ -48,7 +48,7 @@ The next morning was pretty quiet. I enjoyed hanging out with their dogs in the 
 
 Dana also met up with us at Nathan’s apartment. My voice was disappearing, but otherwise felt fine, so I took a Covid test just to be sure. Turns out I had Covid 😭. I hung out on the apartment’s deck for a while figuring out what to do next. 
 
-\## The Bad
+## The Bad
 
 I ended up cancelling all the rest of my trains home. This meant I wouldn’t get to see AG in Chicago, which was a real bummer. I know I’ll get down to NYC this fall, so skipping that visit was less devastating. I found a hotel with a kitchen which I was able to book on points. With logistics more settled, Nathan and Dana and I walked into town (fully masked) to go get burritos (I still felt fine at this point). Dana kindly got me a burrito for now and a later burrito for at the hotel while I waited outside.  We wandered back to a park where we could keep lots of distance. Dana had to head out at this point, but Nathan and I hung out in the park for a while chatting and eating.  As it got dark, Nathan kindly gave me and my stuff a ride to the hotel (with all the windows down). 
 
@@ -64,4 +64,4 @@ I spent the next week in Vail. Largely just resting, watching TV, sitting on the
 
 I’m now feeling mostly better and am looking forward to getting home. I dropped Bubba off at a local bike shop to get packed and shipped home. 
 
-Next up in my adventures is the (Recurse Center)\[recurse.com] where I’m doing a twelve week batch to become an even better programmer go down all the rabbit holes. I’m going to start with compilers and see where that leads me. Recurse is still virtual, so at least to start, I’ll be spending the fall in LC.
+Next up in my adventures is the [Recurse Center](recurse.com) where I’m doing a twelve week batch to become an even better programmer go down all the rabbit holes. I’m going to start with compilers and see where that leads me. Recurse is still virtual, so at least to start, I’ll be spending the fall in LC.
