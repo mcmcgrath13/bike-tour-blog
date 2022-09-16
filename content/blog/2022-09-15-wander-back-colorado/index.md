@@ -64,4 +64,4 @@ I spent the next week in Vail. Largely just resting, watching TV, sitting on the
 
 I’m now feeling mostly better and am looking forward to getting home. I dropped Bubba off at a local bike shop to get packed and shipped home. 
 
-Next up in my adventures is the [Recurse Center](https://recurse.com) where I’m doing a twelve week batch to become an even better programmer go down all the rabbit holes. I’m going to start with compilers and see where that leads me. Recurse is still virtual, so at least to start, I’ll be spending the fall in LC.
+Next up in my adventures is the [Recurse Center](https://recurse.com) where I’m doing a twelve week batch to become an even better programmer and go down all the rabbit holes. I’m going to start with compilers and see where that leads me. Recurse is still virtual, so at least to start, I’ll be spending the fall in LC.
